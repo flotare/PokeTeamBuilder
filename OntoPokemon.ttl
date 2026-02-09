@@ -1,10 +1,10 @@
-@prefix : <http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/> .
+@prefix : <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/> .
+@base <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/> .
 
 <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon> rdf:type owl:Ontology ;
                                                                   owl:versionIRI <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon> .
@@ -34,14 +34,14 @@
                      rdfs:subPropertyOf owl:topObjectProperty ;
                      rdf:type owl:AsymmetricProperty ;
                      rdfs:domain :Objet ;
-                     rdfs:range <http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4#Version_Jeu> .
+                     rdfs:range <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#Version_Jeu> .
 
 
 ###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#EvolvesWithCondition
 :EvolvesWithCondition rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf owl:topObjectProperty ;
                       rdfs:domain :Pokemon ;
-                      rdfs:range <http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4#Declencheur_evolution> .
+                      rdfs:range <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#Declencheur_evolution> .
 
 
 ###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#ImmuneTo
@@ -70,7 +70,7 @@
 :IsEvolvedFromTrigger rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf owl:topObjectProperty ;
                       rdfs:domain :Pokemon ;
-                      rdfs:range <http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4#Declencheur_evolution> .
+                      rdfs:range <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#Declencheur_evolution> .
 
 
 ###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#IsMachineOfCapacite
@@ -102,7 +102,7 @@
 ###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#TriggerLinkedToObject
 :TriggerLinkedToObject rdf:type owl:ObjectProperty ,
                                 owl:FunctionalProperty ;
-                       rdfs:domain <http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4#Utilisation_Objet> ;
+                       rdfs:domain <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#Utilisation_Objet> ;
                        rdfs:range :Objet .
 
 
@@ -117,11 +117,11 @@
 ###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#hasForRegion
 :hasForRegion rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf owl:topObjectProperty ;
-              rdfs:domain <http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4#Version_Jeu> ;
+              rdfs:domain <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#Version_Jeu> ;
               rdfs:range :Region .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Capacite_IsTypeOf
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Capacite_IsTypeOf
 :Capacite_IsTypeOf rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf owl:topObjectProperty ;
                    rdf:type owl:FunctionalProperty ;
@@ -129,7 +129,7 @@
                    rdfs:range :Type_pokemon .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/EvolvesTo
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/EvolvesTo
 :EvolvesTo rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf owl:topObjectProperty ;
            owl:inverseOf :IsEvolutionOf ;
@@ -142,40 +142,40 @@
            rdfs:range :Pokemon .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/EvolvesWithTrigger
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/EvolvesWithTrigger
 :EvolvesWithTrigger rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf owl:topObjectProperty ;
                     rdfs:domain :Pokemon ;
-                    rdfs:range <http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4#Declencheur_evolution> .
+                    rdfs:range <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#Declencheur_evolution> .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/IsAlternativeForm
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/IsAlternativeForm
 :IsAlternativeForm rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf owl:topObjectProperty ;
                    rdfs:domain :Pokemon ;
                    rdfs:range :Alternative .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/IsEvolutionOf
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/IsEvolutionOf
 :IsEvolutionOf rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf owl:topObjectProperty ;
                rdfs:domain :Pokemon ;
                rdfs:range :Pokemon .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Pokemon_IsTypeOf
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Pokemon_IsTypeOf
 :Pokemon_IsTypeOf rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf owl:topObjectProperty ;
                   rdfs:domain :Pokemon ;
                   rdfs:range :Type_pokemon .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/PokemonhasForCapaciteCapacite
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/PokemonhasForCapaciteCapacite
 :PokemonhasForCapaciteCapacite rdf:type owl:ObjectProperty ;
                                owl:deprecated "true"^^xsd:boolean .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/ResistantTo
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/ResistantTo
 :ResistantTo rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf owl:topObjectProperty ;
              owl:inverseOf :WeakAgainst ;
@@ -183,7 +183,7 @@
              rdfs:range :Type_pokemon .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/StrongAgainst
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/StrongAgainst
 :StrongAgainst rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf owl:topObjectProperty ;
                owl:inverseOf :WeakTo ;
@@ -191,21 +191,21 @@
                rdfs:range :Type_pokemon .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/WeakAgainst
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/WeakAgainst
 :WeakAgainst rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf owl:topObjectProperty ;
              rdfs:domain :Type_pokemon ;
              rdfs:range :Type_pokemon .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/WeakTo
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/WeakTo
 :WeakTo rdf:type owl:ObjectProperty ;
         rdfs:subPropertyOf owl:topObjectProperty ;
         rdfs:domain :Type_pokemon ;
         rdfs:range :Type_pokemon .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/hasForCapaciteApprise
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/hasForCapaciteApprise
 :hasForCapaciteApprise rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf owl:topObjectProperty ;
                        rdfs:domain :Pokemon ;
@@ -222,7 +222,7 @@
                        rdfs:comment "Correspond au lien entre un pokémon (Pokemon) et les 1 à 4 capacités (Capacite) que ce pokémon connaît actuellement."@fr .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/hasForCapaciteLearnable
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/hasForCapaciteLearnable
 :hasForCapaciteLearnable rdf:type owl:ObjectProperty ;
                          rdfs:subPropertyOf owl:topObjectProperty ;
                          rdfs:domain :Pokemon ;
@@ -230,7 +230,7 @@
                          rdfs:comment "Correspond au lien entre un pokémon (Pokemon) et les capacités (Capacite) que ce pokémon peut apprendre."@fr .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/hasForCapaciteLearnableByLevel
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/hasForCapaciteLearnableByLevel
 :hasForCapaciteLearnableByLevel rdf:type owl:ObjectProperty ;
                                 rdfs:subPropertyOf :hasForCapaciteLearnable ;
                                 rdfs:domain :Pokemon ;
@@ -241,13 +241,13 @@
                                 rdfs:comment "Correspond au lien entre un pokémon et les capacités que ce pokémon peut apprendre par montée en niveau."@fr .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/hasForCapaciteLearnableByMachines
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/hasForCapaciteLearnableByMachines
 :hasForCapaciteLearnableByMachines rdf:type owl:ObjectProperty ;
                                    rdfs:subPropertyOf :hasForCapaciteLearnable ;
                                    rdfs:comment "Correspond au lien entre un pokémon et les capacités que ce pokémon peut apprendre par CT, DT ou bien CS."@fr .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/hasForCaracteristic
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/hasForCaracteristic
 :hasForCaracteristic rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf owl:topObjectProperty ;
                      rdfs:domain <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Capacite> ;
@@ -255,13 +255,13 @@
                      rdfs:comment "Lien entre une capacité (Capacite) et une de ses caractéristique (Caractéristique_Capacité)."@fr .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/hasForEvolution
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/hasForEvolution
 :hasForEvolution rdf:type owl:ObjectProperty ;
                  rdfs:comment "DEPRECATED Lien entre un pokémon (Pokemon) et un de ses pokémons (Pokemon) en lequel il évolue."@fr ;
                  owl:deprecated "true"^^xsd:boolean .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/isTypeOf
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/isTypeOf
 :isTypeOf rdf:type owl:ObjectProperty ;
           owl:deprecated "true"^^xsd:boolean .
 
@@ -273,39 +273,39 @@
 ###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#generation
 :generation rdf:type owl:DatatypeProperty ;
             rdfs:subPropertyOf owl:topDataProperty ;
-            rdfs:domain <http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4#Version_Jeu> ;
+            rdfs:domain <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#Version_Jeu> ;
             rdfs:range xsd:int .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/niveau
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/niveau
 :niveau rdf:type owl:DatatypeProperty ;
         rdfs:subPropertyOf owl:topDataProperty ;
-        rdfs:domain <http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4#Monte_niveau> ;
+        rdfs:domain <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#Monte_niveau> ;
         rdfs:range xsd:int .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/nom
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/nom
 :nom rdf:type owl:DatatypeProperty ;
      rdfs:subPropertyOf owl:topDataProperty ;
      rdfs:domain owl:Thing ;
      rdfs:range rdf:langString .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/precision_attaque
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/precision_attaque
 :precision_attaque rdf:type owl:DatatypeProperty ;
                    rdfs:domain <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Precision_capacite> ;
                    rdfs:range xsd:decimal ;
                    owl:deprecated "true"^^xsd:boolean .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/precision_capacite
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/precision_capacite
 :precision_capacite rdf:type owl:DatatypeProperty ;
                     rdfs:subPropertyOf owl:topDataProperty ;
                     rdfs:domain <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Precision_capacite> ;
                     rdfs:range xsd:decimal .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/puissance_attaque
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/puissance_attaque
 :puissance_attaque rdf:type owl:DatatypeProperty ;
                    rdfs:subPropertyOf owl:topDataProperty ;
                    rdfs:domain <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Puissance_capacite> ;
@@ -313,7 +313,7 @@
                    owl:deprecated "true"^^xsd:boolean .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/puissance_capacite
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/puissance_capacite
 :puissance_capacite rdf:type owl:DatatypeProperty ;
                     rdfs:subPropertyOf owl:topDataProperty ;
                     rdfs:domain <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Puissance_capacite> ;
@@ -487,464 +487,464 @@
                                                                                     rdfs:subClassOf <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Caracteristique_capacite> .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4#Declencheur_evolution
-<http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4#Declencheur_evolution> rdf:type owl:Class .
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#Declencheur_evolution
+<http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#Declencheur_evolution> rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4#Déclencheur_lieu
-<http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4#Déclencheur_lieu> rdf:type owl:Class ;
-                                                                                          rdfs:subClassOf <http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4#Declencheur_evolution> .
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#Déclencheur_lieu
+<http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#Déclencheur_lieu> rdf:type owl:Class ;
+                                                                                          rdfs:subClassOf <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#Declencheur_evolution> .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4#Echange
-<http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4#Echange> rdf:type owl:Class ;
-                                                                                 rdfs:subClassOf <http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4#Declencheur_evolution> .
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#Echange
+<http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#Echange> rdf:type owl:Class ;
+                                                                                 rdfs:subClassOf <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#Declencheur_evolution> .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4#Lieu_evolution
-<http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4#Lieu_evolution> rdf:type owl:Class ;
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#Lieu_evolution
+<http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#Lieu_evolution> rdf:type owl:Class ;
                                                                                         rdfs:subClassOf <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Condition_evolution> .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4#Monte_niveau
-<http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4#Monte_niveau> rdf:type owl:Class ;
-                                                                                      rdfs:subClassOf <http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4#Declencheur_evolution> .
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#Monte_niveau
+<http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#Monte_niveau> rdf:type owl:Class ;
+                                                                                      rdfs:subClassOf <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#Declencheur_evolution> .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4#Munja
-<http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4#Munja> rdf:type owl:Class ;
-                                                                               rdfs:subClassOf <http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4#Declencheur_evolution> .
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#Munja
+<http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#Munja> rdf:type owl:Class ;
+                                                                               rdfs:subClassOf <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#Declencheur_evolution> .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4#Personnage
-<http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4#Personnage> rdf:type owl:Class .
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#Personnage
+<http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#Personnage> rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4#Personnage_Dresseur
-<http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4#Personnage_Dresseur> rdf:type owl:Class ;
-                                                                                             rdfs:subClassOf <http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4#Personnage> .
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#Personnage_Dresseur
+<http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#Personnage_Dresseur> rdf:type owl:Class ;
+                                                                                             rdfs:subClassOf <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#Personnage> .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4#Personnage_Quete
-<http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4#Personnage_Quete> rdf:type owl:Class ;
-                                                                                          rdfs:subClassOf <http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4#Personnage> .
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#Personnage_Quete
+<http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#Personnage_Quete> rdf:type owl:Class ;
+                                                                                          rdfs:subClassOf <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#Personnage> .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4#Personnage_Strategique
-<http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4#Personnage_Strategique> rdf:type owl:Class ;
-                                                                                                rdfs:subClassOf <http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4#Personnage> .
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#Personnage_Strategique
+<http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#Personnage_Strategique> rdf:type owl:Class ;
+                                                                                                rdfs:subClassOf <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#Personnage> .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4#Personnage_Vendeur
-<http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4#Personnage_Vendeur> rdf:type owl:Class ;
-                                                                                            rdfs:subClassOf <http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4#Personnage> .
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#Personnage_Vendeur
+<http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#Personnage_Vendeur> rdf:type owl:Class ;
+                                                                                            rdfs:subClassOf <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#Personnage> .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4#Tourner_sur_soi
-<http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4#Tourner_sur_soi> rdf:type owl:Class ;
-                                                                                         rdfs:subClassOf <http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4#Declencheur_evolution> .
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#Tourner_sur_soi
+<http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#Tourner_sur_soi> rdf:type owl:Class ;
+                                                                                         rdfs:subClassOf <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#Declencheur_evolution> .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4#Utilisation_Objet
-<http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4#Utilisation_Objet> rdf:type owl:Class ;
-                                                                                           rdfs:subClassOf <http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4#Declencheur_evolution> .
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#Utilisation_Objet
+<http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#Utilisation_Objet> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#Declencheur_evolution> .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4#Version_Jeu
-<http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4#Version_Jeu> rdf:type owl:Class .
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#Version_Jeu
+<http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#Version_Jeu> rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Alola
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Alola
 :Alola rdf:type owl:Class ;
        rdfs:subClassOf :Forme_regionale .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Alternative
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Alternative
 :Alternative rdf:type owl:Class ;
              rdfs:subClassOf :Forme_Pokemon .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Aquatique
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Aquatique
 :Aquatique rdf:type owl:Class ;
            rdfs:subClassOf :Lieu .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Baie
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Baie
 :Baie rdf:type owl:Class ;
       rdfs:subClassOf :Objet_combat .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Baie_boost_statistique
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Baie_boost_statistique
 :Baie_boost_statistique rdf:type owl:Class ;
                         rdfs:subClassOf :Baie .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Baie_diminution_EV
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Baie_diminution_EV
 :Baie_diminution_EV rdf:type owl:Class ;
                     rdfs:subClassOf :Baie .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Baie_protection_type
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Baie_protection_type
 :Baie_protection_type rdf:type owl:Class ;
                       rdfs:subClassOf :Baie .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Baie_soin_PP
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Baie_soin_PP
 :Baie_soin_PP rdf:type owl:Class ;
               rdfs:subClassOf :Baie .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Baie_soin_PV
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Baie_soin_PV
 :Baie_soin_PV rdf:type owl:Class ;
               rdfs:subClassOf :Baie .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Baie_soin_statut
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Baie_soin_statut
 :Baie_soin_statut rdf:type owl:Class ;
                   rdfs:subClassOf :Baie .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/CS
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/CS
 :CS rdf:type owl:Class ;
     rdfs:subClassOf :Objet_capacitaire .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/CT
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/CT
 :CT rdf:type owl:Class ;
     rdfs:subClassOf :Objet_capacitaire .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Capture
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Capture
 :Capture rdf:type owl:Class ;
          rdfs:subClassOf :Pokemon .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Choix
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Choix
 :Choix rdf:type owl:Class ;
        rdfs:subClassOf :Objet_combat .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Cristal_Z
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Cristal_Z
 :Cristal_Z rdf:type owl:Class ;
            rdfs:subClassOf :Objet_combat .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Cristal_Z_pokemon
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Cristal_Z_pokemon
 :Cristal_Z_pokemon rdf:type owl:Class ;
                    rdfs:subClassOf :Cristal_Z .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Cristal_Z_type
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Cristal_Z_type
 :Cristal_Z_type rdf:type owl:Class ;
                 rdfs:subClassOf :Cristal_Z .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/DT
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/DT
 :DT rdf:type owl:Class ;
     rdfs:subClassOf :Objet_capacitaire .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Deplacement_Grotte
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Deplacement_Grotte
 :Deplacement_Grotte rdf:type owl:Class ;
                     rdfs:subClassOf :Déplacement .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Déplacement
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Déplacement
 :Déplacement rdf:type owl:Class ;
              rdfs:subClassOf :Methode_rencontre .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/EV
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/EV
 :EV rdf:type owl:Class ;
     rdfs:subClassOf :Statistique .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Esthetique
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Esthetique
 :Esthetique rdf:type owl:Class ;
             rdfs:subClassOf :Forme_Pokemon .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Fabuleux
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Fabuleux
 :Fabuleux rdf:type owl:Class ;
           rdfs:subClassOf :Pokemon .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Forme_Pokemon
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Forme_Pokemon
 :Forme_Pokemon rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Forme_regionale
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Forme_regionale
 :Forme_regionale rdf:type owl:Class ;
                  rdfs:subClassOf :Forme_Pokemon .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Galar
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Galar
 :Galar rdf:type owl:Class ;
        rdfs:subClassOf :Forme_regionale .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Gigamax
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Gigamax
 :Gigamax rdf:type owl:Class ;
          rdfs:subClassOf :Forme_Pokemon .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Grotte
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Grotte
 :Grotte rdf:type owl:Class ;
         rdfs:subClassOf :Lieu .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Groupe_oeuf
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Groupe_oeuf
 :Groupe_oeuf rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Herbe
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Herbe
 :Herbe rdf:type owl:Class ;
        rdfs:subClassOf :Déplacement .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Heure_journee
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Heure_journee
 :Heure_journee rdf:type owl:Class ;
                rdfs:subClassOf <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Condition_evolution> .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Hisui
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Hisui
 :Hisui rdf:type owl:Class ;
        rdfs:subClassOf :Forme_regionale .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Horde
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Horde
 :Horde rdf:type owl:Class ;
        rdfs:subClassOf :Methode_rencontre .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/IV
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/IV
 :IV rdf:type owl:Class ;
     rdfs:subClassOf :Statistique .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Interaction_avec_pokemon
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Interaction_avec_pokemon
 :Interaction_avec_pokemon rdf:type owl:Class ;
                           rdfs:subClassOf :Methode_rencontre .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Legendaire
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Legendaire
 :Legendaire rdf:type owl:Class ;
             rdfs:subClassOf :Pokemon .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Lieu
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Lieu
 :Lieu rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Medicament
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Medicament
 :Medicament rdf:type owl:Class ;
             rdfs:subClassOf :Objet_tenable .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Medicament_soin_PP
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Medicament_soin_PP
 :Medicament_soin_PP rdf:type owl:Class ;
                     rdfs:subClassOf :Medicament .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Medicament_soin_PV
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Medicament_soin_PV
 :Medicament_soin_PV rdf:type owl:Class ;
                     rdfs:subClassOf :Medicament .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Medicament_soin_statut
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Medicament_soin_statut
 :Medicament_soin_statut rdf:type owl:Class ;
                         rdfs:subClassOf :Medicament .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Mega
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Mega
 :Mega rdf:type owl:Class ;
       rdfs:subClassOf :Forme_Pokemon .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Mega-gemme
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Mega-gemme
 :Mega-gemme rdf:type owl:Class ;
             rdfs:subClassOf :Objet_combat .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Meteo
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Meteo
 :Meteo rdf:type owl:Class ;
        rdfs:subClassOf <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Condition_evolution> .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Methode_rencontre
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Methode_rencontre
 :Methode_rencontre rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Miel_Arbre
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Miel_Arbre
 :Miel_Arbre rdf:type owl:Class ;
             rdfs:subClassOf :Methode_rencontre .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Multijoueur
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Multijoueur
 :Multijoueur rdf:type owl:Class ;
              rdfs:subClassOf <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Condition_evolution> .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Nature
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Nature
 :Nature rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Navi-dex
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Navi-dex
 :Navi-dex rdf:type owl:Class ;
           rdfs:subClassOf :Herbe .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Niveau_pokemon
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Niveau_pokemon
 :Niveau_pokemon rdf:type owl:Class ;
                 rdfs:subClassOf :Statistique .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Objet
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Objet
 :Objet rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Objet_capacitaire
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Objet_capacitaire
 :Objet_capacitaire rdf:type owl:Class ;
                    rdfs:subClassOf :Objet .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Objet_combat
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Objet_combat
 :Objet_combat rdf:type owl:Class ;
               rdfs:subClassOf :Objet_tenable .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Objet_evenementiel
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Objet_evenementiel
 :Objet_evenementiel rdf:type owl:Class ;
                     rdfs:subClassOf :Objet_rare .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Objet_evolution
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Objet_evolution
 :Objet_evolution rdf:type owl:Class ;
                  rdfs:subClassOf :Objet_tenable .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Objet_rare
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Objet_rare
 :Objet_rare rdf:type owl:Class ;
             rdfs:subClassOf :Objet .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Objet_tenable
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Objet_tenable
 :Objet_tenable rdf:type owl:Class ;
                rdfs:subClassOf :Objet .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Objet_tenu
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Objet_tenu
 :Objet_tenu rdf:type owl:Class ;
             rdfs:subClassOf <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Condition_evolution> .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Paldea
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Paldea
 :Paldea rdf:type owl:Class ;
         rdfs:subClassOf :Forme_regionale .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Parc_safari
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Parc_safari
 :Parc_safari rdf:type owl:Class ;
              rdfs:subClassOf :Lieu .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Piste_cyclable
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Piste_cyclable
 :Piste_cyclable rdf:type owl:Class ;
                 rdfs:subClassOf :Lieu .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Plaque_arceus
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Plaque_arceus
 :Plaque_arceus rdf:type owl:Class ;
                rdfs:subClassOf :Objet_combat .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Pokemon
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Pokemon
 :Pokemon rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Posseder_objet_sac
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Posseder_objet_sac
 :Posseder_objet_sac rdf:type owl:Class ;
                     rdfs:subClassOf <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Condition_evolution> .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Presence_pokemon_equipe
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Presence_pokemon_equipe
 :Presence_pokemon_equipe rdf:type owl:Class ;
                          rdfs:subClassOf <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Condition_evolution> .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Presence_type_pokemon_equipe
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Presence_type_pokemon_equipe
 :Presence_type_pokemon_equipe rdf:type owl:Class ;
                               rdfs:subClassOf <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Condition_evolution> .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Pêche
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Pêche
 :Pêche rdf:type owl:Class ;
        rdfs:subClassOf :Methode_rencontre .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Rencontre_capacite
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Rencontre_capacite
 :Rencontre_capacite rdf:type owl:Class ;
                     rdfs:subClassOf :Methode_rencontre .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Rendement_EV
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Rendement_EV
 :Rendement_EV rdf:type owl:Class ;
               rdfs:subClassOf :Statistique .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Sauvage
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Sauvage
 :Sauvage rdf:type owl:Class ;
          rdfs:subClassOf :Pokemon .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Sous-marin
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Sous-marin
 :Sous-marin rdf:type owl:Class ;
             rdfs:subClassOf :Aquatique .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Statistique
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Statistique
 :Statistique rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Statistique_base
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Statistique_base
 :Statistique_base rdf:type owl:Class ;
                   rdfs:subClassOf :Statistique .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Statistique_finale
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Statistique_finale
 :Statistique_finale rdf:type owl:Class ;
                     rdfs:subClassOf :Statistique .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Statistique_personalite
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Statistique_personalite
 :Statistique_personalite rdf:type owl:Class ;
                          rdfs:subClassOf :Statistique .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Surf
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Surf
 :Surf rdf:type owl:Class ;
       rdfs:subClassOf :Déplacement .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Talent
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Talent
 :Talent rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Talent_cache
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Talent_cache
 :Talent_cache rdf:type owl:Class ;
               rdfs:subClassOf :Talent .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Type_pokemon
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Type_pokemon
 :Type_pokemon rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Utiliser_capacite_specifique
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Utiliser_capacite_specifique
 :Utiliser_capacite_specifique rdf:type owl:Class ;
                               rdfs:subClassOf <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Condition_evolution> .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/Ville
+###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Ville
 :Ville rdf:type owl:Class ;
        rdfs:subClassOf :Lieu .
 
@@ -1098,19 +1098,19 @@
 
 ###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#TriggerEvolution_Bulbizarre_To_Herbizarre
 :TriggerEvolution_Bulbizarre_To_Herbizarre rdf:type owl:NamedIndividual ,
-                                                    <http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4#Monte_niveau> ;
+                                                    <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#Monte_niveau> ;
                                            :niveau 16 .
 
 
 ###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#TriggerEvolution_Herbizarre_To_Florizarre
 :TriggerEvolution_Herbizarre_To_Florizarre rdf:type owl:NamedIndividual ,
-                                                    <http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4#Monte_niveau> ;
+                                                    <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#Monte_niveau> ;
                                            :niveau 32 .
 
 
 ###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#TriggerEvolution_Utilisation_Pierre_Lune
 :TriggerEvolution_Utilisation_Pierre_Lune rdf:type owl:NamedIndividual ,
-                                                   <http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4#Utilisation_Objet> ;
+                                                   <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#Utilisation_Objet> ;
                                           :TriggerLinkedToObject :Objet_PierreLune_gen1 .
 
 
@@ -1213,7 +1213,7 @@
 
 ###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#VersionJeu_PokemonRouge
 :VersionJeu_PokemonRouge rdf:type owl:NamedIndividual ,
-                                  <http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4#Version_Jeu> ;
+                                  <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#Version_Jeu> ;
                          owl:differentFrom :VersionJeu_PokemonVert ;
                          :hasForRegion :Lieu_Kanto ;
                          :generation 1 ;
@@ -1222,7 +1222,7 @@
 
 ###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#VersionJeu_PokemonVert
 :VersionJeu_PokemonVert rdf:type owl:NamedIndividual ,
-                                 <http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4#Version_Jeu> ;
+                                 <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#Version_Jeu> ;
                         :hasForRegion :Lieu_Kanto ;
                         :generation 1 ;
                         :nom "Pokémon Vert" .
