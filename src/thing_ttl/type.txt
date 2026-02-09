@@ -1,0 +1,126 @@
+### http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#normal
+:normal rdf:type owl:NamedIndividual ,
+                             :Type_pokemon ;
+                    :WeakTo :fighting ;
+                    :ImmuneTo :ghost .
+
+### http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#fighting
+:fighting rdf:type owl:NamedIndividual ,
+                             :Type_pokemon ;
+                    :WeakTo :flying, :psychic, :fairy ;
+                    :ResistantTo :rock, :bug, :dark .
+
+### http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#flying
+:flying rdf:type owl:NamedIndividual ,
+                             :Type_pokemon ;
+                    :WeakTo :rock, :electric, :ice ;
+                    :ResistantTo :fighting, :bug, :grass ;
+                    :ImmuneTo :ground .
+
+### http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#poison
+:poison rdf:type owl:NamedIndividual ,
+                             :Type_pokemon ;
+                    :WeakTo :ground, :psychic ;
+                    :ResistantTo :fighting, :poison, :bug, :grass, :fairy .
+
+### http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#ground
+:ground rdf:type owl:NamedIndividual ,
+                             :Type_pokemon ;
+                    :WeakTo :water, :grass, :ice ;
+                    :ResistantTo :poison, :rock ;
+                    :ImmuneTo :electric .
+
+### http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#rock
+:rock rdf:type owl:NamedIndividual ,
+                             :Type_pokemon ;
+                    :WeakTo :fighting, :ground, :steel, :water, :grass ;
+                    :ResistantTo :normal, :flying, :poison, :fire .
+
+### http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#bug
+:bug rdf:type owl:NamedIndividual ,
+                             :Type_pokemon ;
+                    :WeakTo :flying, :rock, :fire ;
+                    :ResistantTo :fighting, :ground, :grass .
+
+### http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#ghost
+:ghost rdf:type owl:NamedIndividual ,
+                             :Type_pokemon ;
+                    :WeakTo :ghost, :dark ;
+                    :ResistantTo :poison, :bug ;
+                    :ImmuneTo :normal, :fighting .
+
+### http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#steel
+:steel rdf:type owl:NamedIndividual ,
+                             :Type_pokemon ;
+                    :WeakTo :fighting, :ground, :fire ;
+                    :ResistantTo :normal, :flying, :rock, :bug, :steel, :grass, :psychic, :ice, :dragon, :fairy ;
+                    :ImmuneTo :poison .
+
+### http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#fire
+:fire rdf:type owl:NamedIndividual ,
+                             :Type_pokemon ;
+                    :WeakTo :ground, :rock, :water ;
+                    :ResistantTo :bug, :steel, :fire, :grass, :ice, :fairy .
+
+### http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#water
+:water rdf:type owl:NamedIndividual ,
+                             :Type_pokemon ;
+                    :WeakTo :grass, :electric ;
+                    :ResistantTo :steel, :fire, :water, :ice .
+
+### http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#grass
+:grass rdf:type owl:NamedIndividual ,
+                             :Type_pokemon ;
+                    :WeakTo :flying, :poison, :bug, :fire, :ice ;
+                    :ResistantTo :ground, :water, :grass, :electric .
+
+### http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#electric
+:electric rdf:type owl:NamedIndividual ,
+                             :Type_pokemon ;
+                    :WeakTo :ground ;
+                    :ResistantTo :flying, :steel, :electric .
+
+### http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#psychic
+:psychic rdf:type owl:NamedIndividual ,
+                             :Type_pokemon ;
+                    :WeakTo :bug, :ghost, :dark ;
+                    :ResistantTo :fighting, :psychic .
+
+### http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#ice
+:ice rdf:type owl:NamedIndividual ,
+                             :Type_pokemon ;
+                    :WeakTo :fighting, :rock, :steel, :fire ;
+                    :ResistantTo :ice .
+
+### http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#dragon
+:dragon rdf:type owl:NamedIndividual ,
+                             :Type_pokemon ;
+                    :WeakTo :ice, :dragon, :fairy ;
+                    :ResistantTo :fire, :water, :grass, :electric .
+
+### http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#dark
+:dark rdf:type owl:NamedIndividual ,
+                             :Type_pokemon ;
+                    :WeakTo :fighting, :bug, :fairy ;
+                    :ResistantTo :ghost, :dark ;
+                    :ImmuneTo :psychic .
+
+### http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#fairy
+:fairy rdf:type owl:NamedIndividual ,
+                             :Type_pokemon ;
+                    :WeakTo :poison, :steel ;
+                    :ResistantTo :fighting, :bug, :dark ;
+                    :ImmuneTo :dragon .
+
+### http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#stellar
+:stellar rdf:type owl:NamedIndividual ,
+                             :Type_pokemon .
+
+### http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#unknown
+:unknown rdf:type owl:NamedIndividual ,
+                             :Type_pokemon .
+
+### http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#shadow
+:shadow rdf:type owl:NamedIndividual ,
+                             :Type_pokemon .
+
