@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ pokemon_name }}</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        h1 { text-transform: capitalize; }
+        table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+        th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+    </style>
+</head>
+<body>
+    <h1>{{ pokemon_name }}</h1>
+
+    <table>
+        <tr>
+            <th>Propriété</th>
+            <th>Valeur</th>
+        </tr>
+        {% for prop, val in results %}
+        <tr>
+            <td>{{ prop }}</td>
+            <td>{{ val }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

@@ -1,0 +1,21 @@
+Que représente notre ontologie
+A quoi elle sert
+Scénarios utilisé pour concevoir l'ontologie
+Contenu de l'ontologie
+Détails de conception de l'ontologie (pourquoi certaines choses ont été faites d'une certaine manière et pourquoi c'est pertinent)
+
+
+
+
+pip install owlrl rdflib fastapi
+
+
+
+
+
+
+
+
+
+Todo :
+- Page pokemon --> chaîne d'évolution, stats
