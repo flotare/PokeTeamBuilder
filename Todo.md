@@ -1,8 +1,9 @@
 # TODO – Projet Ontologie
 
-- [] prendre les images des poke pour visualisation
+- [x] prendre les images des poke pour visualisation
 - [] mettre les types d'oeufs
-- [] ajouter liens images: pokemon, item, types  url_img
-- [] https://pokeapi.co/api/v2/move
+- [x] ajouter liens images: pokemon, item, types  url_img
+- [x] https://pokeapi.co/api/v2/move
 - [x] dans types, ajouter les data properties ImmuneTo
-- [] ajout d'une propriete Can_learn_capacite : pokemon -> capacite
+- [x] ajout d'une propriete hasForCapaciteLearnable : pokemon -> capacite
+- [] learn methode dans capacite
