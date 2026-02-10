@@ -22,7 +22,7 @@ app.add_middleware(
 
 # charger ontologie
 g = Graph()
-g.parse("./turtle/OntoPokemon.ttl", format="turtle")
+g.parse("./turtle/Onto_web.ttl", format="turtle")
 ONTO = Namespace("http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/")
 
 # Appliquer le raisonnement RDFS / OWL-RL
