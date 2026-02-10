@@ -11338,13 +11338,6 @@
 			:effect_name "Effet : L'effet de cet objet n'est pas précisé." ;
 			:url_img "https://www.cabinet-merlin.fr/wp-content/uploads/2016/04/dummy-post-square-1.jpg" .
 
-### http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#kofu’s-wallet
-:kofu’s-wallet rdf:type owl:NamedIndividual ,
-		:Objet ;
-			:nom "kofu’s-wallet" ;
-			:effect_name "Effet : L'effet de cet objet n'est pas précisé." ;
-			:url_img "https://www.cabinet-merlin.fr/wp-content/uploads/2016/04/dummy-post-square-1.jpg" .
-
 ### http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#tiny-bamboo-shoot
 :tiny-bamboo-shoot rdf:type owl:NamedIndividual ,
 		:Objet ;
@@ -13928,13 +13921,6 @@
 			:effect_name "Effet : L'effet de cet objet n'est pas précisé." ;
 			:url_img "https://www.cabinet-merlin.fr/wp-content/uploads/2016/04/dummy-post-square-1.jpg" .
 
-### http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#leader’s-crest
-:leader’s-crest rdf:type owl:NamedIndividual ,
-		:Objet ;
-			:nom "leader’s-crest" ;
-			:effect_name "Effet : L'effet de cet objet n'est pas précisé." ;
-			:url_img "https://www.cabinet-merlin.fr/wp-content/uploads/2016/04/dummy-post-square-1.jpg" .
-
 ### http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#pink-bottle
 :pink-bottle rdf:type owl:NamedIndividual ,
 		:Objet ;
@@ -13953,27 +13939,6 @@
 :yellow-bottle rdf:type owl:NamedIndividual ,
 		:Objet ;
 			:nom "yellow-bottle" ;
-			:effect_name "Effet : L'effet de cet objet n'est pas précisé." ;
-			:url_img "https://www.cabinet-merlin.fr/wp-content/uploads/2016/04/dummy-post-square-1.jpg" .
-
-### http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#steel-bottle-(r)
-:steel-bottle-(r) rdf:type owl:NamedIndividual ,
-		:Objet ;
-			:nom "steel-bottle-(r)" ;
-			:effect_name "Effet : L'effet de cet objet n'est pas précisé." ;
-			:url_img "https://www.cabinet-merlin.fr/wp-content/uploads/2016/04/dummy-post-square-1.jpg" .
-
-### http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#steel-bottle-(y)
-:steel-bottle-(y) rdf:type owl:NamedIndividual ,
-		:Objet ;
-			:nom "steel-bottle-(y)" ;
-			:effect_name "Effet : L'effet de cet objet n'est pas précisé." ;
-			:url_img "https://www.cabinet-merlin.fr/wp-content/uploads/2016/04/dummy-post-square-1.jpg" .
-
-### http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#steel-bottle-(b)
-:steel-bottle-(b) rdf:type owl:NamedIndividual ,
-		:Objet ;
-			:nom "steel-bottle-(b)" ;
 			:effect_name "Effet : L'effet de cet objet n'est pas précisé." ;
 			:url_img "https://www.cabinet-merlin.fr/wp-content/uploads/2016/04/dummy-post-square-1.jpg" .
 
@@ -14058,34 +14023,6 @@
 :exercise-ball rdf:type owl:NamedIndividual ,
 		:Objet ;
 			:nom "exercise-ball" ;
-			:effect_name "Effet : L'effet de cet objet n'est pas précisé." ;
-			:url_img "https://www.cabinet-merlin.fr/wp-content/uploads/2016/04/dummy-post-square-1.jpg" .
-
-### http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#plaid-tablecloth-(y)
-:plaid-tablecloth-(y) rdf:type owl:NamedIndividual ,
-		:Objet ;
-			:nom "plaid-tablecloth-(y)" ;
-			:effect_name "Effet : L'effet de cet objet n'est pas précisé." ;
-			:url_img "https://www.cabinet-merlin.fr/wp-content/uploads/2016/04/dummy-post-square-1.jpg" .
-
-### http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#plaid-tablecloth-(b)
-:plaid-tablecloth-(b) rdf:type owl:NamedIndividual ,
-		:Objet ;
-			:nom "plaid-tablecloth-(b)" ;
-			:effect_name "Effet : L'effet de cet objet n'est pas précisé." ;
-			:url_img "https://www.cabinet-merlin.fr/wp-content/uploads/2016/04/dummy-post-square-1.jpg" .
-
-### http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#plaid-tablecloth-(r)
-:plaid-tablecloth-(r) rdf:type owl:NamedIndividual ,
-		:Objet ;
-			:nom "plaid-tablecloth-(r)" ;
-			:effect_name "Effet : L'effet de cet objet n'est pas précisé." ;
-			:url_img "https://www.cabinet-merlin.fr/wp-content/uploads/2016/04/dummy-post-square-1.jpg" .
-
-### http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#b&w-grass-tablecloth
-:b&w-grass-tablecloth rdf:type owl:NamedIndividual ,
-		:Objet ;
-			:nom "b&w-grass-tablecloth" ;
 			:effect_name "Effet : L'effet de cet objet n'est pas précisé." ;
 			:url_img "https://www.cabinet-merlin.fr/wp-content/uploads/2016/04/dummy-post-square-1.jpg" .
 
