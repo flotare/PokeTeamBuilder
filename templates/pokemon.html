@@ -20,8 +20,8 @@
             <img class="pokemon-img" src="{{ pokemon.img }}" alt="{{ pokemon.name }}">
 
             <div class="types">
-                {% for t in pokemon.types %}
-                    <img src="{{ t }}" alt="type">
+                {% for type_dict in pokemon.types %}
+                <img src="{{ type_dict.img }}" alt="type">
                 {% endfor %}
             </div>
 
@@ -46,16 +46,57 @@
     <div class="bottom">
 
         <h3>Groupes d'oeufs</h3>
-        {% for egg in pokemon.eggs %}
-            <div>{{ egg }}</div>
+        {% for egg_dict in pokemon.eggs %}
+        <div>{{ egg_dict.name }}</div>
         {% endfor %}
 
         <h3>Évolution</h3>
         {% if pokemon.evo %}
-            <div>{{ pokemon.evo }}</div>
+        <div>{{ pokemon.evo }}</div>
         {% else %}
-            <div>Aucune</div>
+        <div>Aucune</div>
         {% endif %}
+
+        <h3>Capacités apprises</h3>
+
+        <table class="moves-table">
+
+            <tr>
+                <th>Nom</th>
+                <th>Type</th>
+                <th>Catégorie</th>
+                <th>Puissance</th>
+                <th>Précision</th>
+                <th>PP</th>
+                <th>Priorité</th>
+            </tr>
+
+            {% for move in pokemon.moves %}
+            <tr>
+
+                <td>{{ move.name }}</td>
+
+                <td>
+                    {% if move.type_img %}
+                    <img src="{{ move.type_img }}" class="move-type">
+                    {% endif %}
+                </td>
+
+                <td>
+                    {% if move.category %}
+                    <img src="{{ move.category }}" class="move-type">
+                    {% endif %}
+                </td>
+                <td>{{ move.power if move.power is not none else '-' }}</td>
+                <td>{{ move.accuracy }}</td>
+                <td>{{ move.pp }}</td>
+                <td>{{ move.priority }}</td>
+
+            </tr>
+            {% endfor %}
+
+        </table>
+
 
     </div>
 

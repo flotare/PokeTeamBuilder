@@ -68,3 +68,25 @@ h1 {
   border-radius: 6px;
   transition: width 0.3s ease;
 }
+
+
+.moves-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.moves-table th,
+.moves-table td {
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.moves-table th {
+    background: #f0f0f0;
+}
+
+.move-type {
+    width: 60px;
+}
