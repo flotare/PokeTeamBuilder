@@ -333,12 +333,14 @@ def pokemon_page(request: Request, pokemon_name: str):
     # --- 4. Évolution ---
     query_evo = f"""
     {prefix}
-    SELECT ?evo ?preevo
+    SELECT ?evo ?preevo ?desc
     WHERE {{
         ?p a :Pokemon ;
            :nom "{pokemon_name_clean}" ;
+           :descriptionEvolution ?desc
            OPTIONAL {{ ?p :EvolvesTo ?evo . }}
            OPTIONAL {{ ?p :IsEvolutionOf ?preevo . }}
+           
     }}
     """
     rows_evo = list(g.query(query_evo))
@@ -352,6 +354,10 @@ def pokemon_page(request: Request, pokemon_name: str):
         str(r.preevo).split('/')[-1]
         for r in rows_evo
         if r.preevo
+    ]
+    
+    pokemon["evodesc"] = [
+        str(r.desc) for r in rows_evo if r.desc
     ]
 
 

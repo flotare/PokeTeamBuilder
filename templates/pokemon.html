@@ -67,13 +67,28 @@
         {% endif %}
 
         <h3>Évolution</h3>
-        {% if pokemon.evo %}
-            {% for evo in pokemon.evo %}
-                <div>{{ evo }}</div>
-            {% endfor %}
-        {% else %}
-            <div>Aucune</div>
-        {% endif %}
+        <div>
+            <div>
+                {% if pokemon.evo %}
+                {% for evo in pokemon.evo %}
+                    <div>{{ evo }}</div>
+                {% endfor %}
+                {% else %}
+                    <div>Aucune</div>
+                {% endif %}
+            </div>
+            <div>
+                <h4>Méthode(s) d'évolutions</h4>
+                {% if pokemon.evodesc %}
+                {% for desc in pokemon.evodesc %}
+                    <div>{{ desc }}</div>
+                {% endfor %}
+                {% else %}
+                    <div>Non renseignée(s)</div>
+                {% endif %}
+            </div>
+        </div>
+        
 
         <h3>Capacités apprises</h3>
 
