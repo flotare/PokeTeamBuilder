@@ -2,6 +2,70 @@ const input_pokemon = document.getElementById("search_pokemon");
 const input_items = document.getElementById("search_items");
 const resultsDiv = document.getElementById("results");
 
+
+const MAX_TEAM = 6;
+let team = Array(MAX_TEAM).fill(null);
+
+// Fonction pour ajouter un Pokémon à la team
+function addToTeam(pokemon) {
+    const emptyIndex = team.findIndex(slot => slot === null);
+    if (emptyIndex === -1) {
+        alert("La team est pleine !");
+        return;
+    }
+    team[emptyIndex] = pokemon;
+    saveTeam();
+    renderTeam();
+}
+
+// Fonction pour retirer un Pokémon de la team
+function removeFromTeam(index) {
+    team[index] = null;
+    saveTeam();
+    renderTeam();
+}
+
+// Mise à jour de l'affichage de la team
+function renderTeam() {
+    const slots = document.querySelectorAll(".team-slot");
+    slots.forEach((slot, idx) => {
+        slot.innerHTML = "";
+        if (team[idx]) {
+            slot.classList.add("filled");
+            slot.innerHTML = `
+                <img src="${team[idx].img}" alt="${team[idx].name}">
+                <div>${team[idx].name}</div>
+                <button class="remove-btn">-</button>
+            `;
+            slot.querySelector(".remove-btn").addEventListener("click", () => removeFromTeam(idx));
+        } else {
+            slot.classList.remove("filled");
+            slot.innerHTML = `<div class="team-empty">Vide</div>`;
+        }
+    });
+}
+
+function saveTeam() {
+    sessionStorage.setItem("poketeam", JSON.stringify(team));
+}
+
+function loadTeam() {
+    const data = sessionStorage.getItem("poketeam");
+    if (data) {
+        try {
+            const saved = JSON.parse(data);
+            if (Array.isArray(saved)) {
+                team = saved;
+            }
+        } catch (e) {
+            console.error("Erreur parsing team:", e);
+        }
+    }
+}
+
+
+
+// --- Recherches Pokémon et objets (existant) ---
 async function setupSearch(inputId, resultId, endpoint) {
     const input = document.getElementById(inputId);
     const resultsDiv = document.getElementById(resultId);
@@ -68,3 +132,8 @@ async function setupSearch(inputId, resultId, endpoint) {
 
 setupSearch("search_pokemon", "results_pokemon", "/search/pokemon");
 setupSearch("search_items", "results_items", "/search/objet");
+
+
+// Initial render
+loadTeam();
+renderTeam();

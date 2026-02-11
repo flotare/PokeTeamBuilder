@@ -9,21 +9,36 @@
 
 <h1>Pokédex Ontologique</h1>
 
-<div class="search-container">
-    <!-- Colonne Pokémon -->
-    <div class="column">
-        <h2>Pokémon</h2>
-        <input id="search_pokemon" placeholder="Écrivez le nom d'un Pokémon..." />
-        <div id="results_pokemon"></div>
+<div class="main-container">
+
+    <div class="search-container">
+        <!-- Colonne Pokémon -->
+        <div class="column">
+            <h2>Pokémon</h2>
+            <input id="search_pokemon" placeholder="Écrivez le nom d'un Pokémon..." />
+            <div id="results_pokemon"></div>
+        </div>
+
+        <!-- Colonne Objets -->
+        <div class="column">
+            <h2>Objets</h2>
+            <input id="search_items" placeholder="Écrivez le nom d'un objet..." />
+            <div id="results_items"></div>
+        </div>
     </div>
 
-    <!-- Colonne Objets -->
-    <div class="column">
-        <h2>Objets</h2>
-        <input id="search_items" placeholder="Écrivez le nom d'un objet..." />
-        <div id="results_items"></div>
+    <!-- Colonne Team -->
+    <div class="team-column">
+        <h2>Team</h2>
+        <div class="team-grid">
+            {% for i in range(6) %}
+            <div class="team-slot" data-index="{{ i }}">
+                <div class="team-empty">Vide</div>
+                <button class="remove-btn">-</button>
+            </div>
+            {% endfor %}
+        </div>
     </div>
-    
 
 </div>
 

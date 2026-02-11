@@ -17,12 +17,6 @@ h1 {
     color: #333;
 }
 
-/* Conteneur principal : deux colonnes */
-.search-container {
-    display: flex;
-    gap: 40px;
-    justify-content: center;
-}
 
 .column {
     background: #fff;
@@ -102,4 +96,92 @@ h1 {
 .right img {
     border-radius: 6px;
     margin-left: 0;
+}
+
+/* Conteneur principal : 3 colonnes */
+.main-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start; /* <-- important pour que les colonnes ne s'étirent pas */
+    flex-wrap: wrap; /* au cas où l'écran est petit */
+}
+
+/* Ancienne search-container reste flex pour les 2 colonnes de recherche */
+.search-container {
+    display: flex;
+    gap: 20px;
+}
+
+/* Colonne team */
+.column {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 350px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;  /* <-- empêche l'étirement automatique de la hauteur */
+    overflow: auto;          /* scroll si trop grand */
+}
+
+.team-column {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 350px;
+    height: auto; /* laisse le contenu décider de la hauteur */
+    display: flex;
+    flex-direction: column;
+    overflow: auto; /* permet de scroller si la colonne devient trop grande */
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.team-slot {
+    position: relative;
+    background: #f9f9f9;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.team-slot img {
+    max-width: 80px;
+    margin-bottom: 5px;
+}
+
+.team-slot .remove-btn {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    background: #ff4d4d;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    padding: 2px 6px;
+    cursor: pointer;
+    display: none;
+}
+
+.team-slot.filled .remove-btn {
+    display: block;
+}
+
+.team-empty {
+    color: #aaa;
 }

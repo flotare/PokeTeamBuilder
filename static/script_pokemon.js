@@ -14,4 +14,32 @@ function applyStatBars() {
   });
 }
 
-applyStatBars();
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    applyStatBars();
+
+    const addBtn = document.getElementById("add-to-team-btn");
+    if (addBtn) {
+        addBtn.addEventListener("click", () => {
+            const pokemon = {
+                name: addBtn.dataset.name,
+                img: addBtn.dataset.img
+            };
+
+            const data = sessionStorage.getItem("poketeam");
+            let team = data ? JSON.parse(data) : Array(6).fill(null);
+
+            const emptyIndex = team.findIndex(slot => slot === null);
+            if (emptyIndex === -1) {
+                alert("La team est pleine !");
+                return;
+            }
+
+            team[emptyIndex] = pokemon;
+            sessionStorage.setItem("poketeam", JSON.stringify(team));
+            alert(`${pokemon.name} ajouté à la team !`);
+        });
+    }
+
+});

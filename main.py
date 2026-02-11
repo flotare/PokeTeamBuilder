@@ -218,7 +218,8 @@ def item_page(request: Request, item_name: str):
 
     SELECT ?item ?nom ?img ?effect ?type
     WHERE {{
-        ?item :nom "{item_name_clean}" ;
+        ?item :nom "{item_name}" ;
+              :nom ?nom ;
               :url_img ?img ;
               :effect_name ?effect ;
               rdf:type ?type .
@@ -239,8 +240,10 @@ def item_page(request: Request, item_name: str):
         "name": str(row.nom),
         "img": str(row.img),
         "effect": str(row.effect),
-        "type": str(row.type).split("#")[-1]
+        "type": str(row.type).split("/")[-1]
     }
+    
+    print(item_data)
 
     return templates.TemplateResponse(
         "item.html",
@@ -330,15 +333,27 @@ def pokemon_page(request: Request, pokemon_name: str):
     # --- 4. Évolution ---
     query_evo = f"""
     {prefix}
-    SELECT ?evo
+    SELECT ?evo ?preevo
     WHERE {{
         ?p a :Pokemon ;
            :nom "{pokemon_name_clean}" ;
-           :EvolvesTo ?evo .
+           OPTIONAL {{ ?p :EvolvesTo ?evo . }}
+           OPTIONAL {{ ?p :IsEvolutionOf ?preevo . }}
     }}
     """
     rows_evo = list(g.query(query_evo))
-    pokemon["evo"] = [str(r.evo) for r in rows_evo] if rows_evo else []
+    pokemon["evo"] = [
+        str(r.evo).split('/')[-1]
+        for r in rows_evo
+        if r.evo
+    ]
+
+    pokemon["preevo"] = [
+        str(r.preevo).split('/')[-1]
+        for r in rows_evo
+        if r.preevo
+    ]
+
 
     # --- 5. Capacités / Moves ---
     query_moves = f"""

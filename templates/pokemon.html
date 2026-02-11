@@ -4,7 +4,6 @@
 
 {% block css %}
 <link rel="stylesheet" href="/static/pokemon.css">
-<script src="/static/script_pokemon.js"></script>
 {% endblock %}
 
 {% block content %}
@@ -12,6 +11,14 @@
 <div class="container">
 
     <h1>{{ pokemon.name }}</h1>
+
+    <button 
+    id="add-to-team-btn" 
+    data-name="{{ pokemon.name }}" 
+    data-img="{{ pokemon.img }}"
+    >
+        Ajouter à la team
+    </button>
 
     <div class="top">
 
@@ -50,11 +57,22 @@
         <div>{{ egg_dict.name }}</div>
         {% endfor %}
 
+        <h3>Pré-Évolution</h3>
+        {% if pokemon.preevo %}
+            {% for pre in pokemon.preevo %}
+                <div>{{ pre }}</div>
+            {% endfor %}
+        {% else %}
+            <div>Aucune</div>
+        {% endif %}
+
         <h3>Évolution</h3>
         {% if pokemon.evo %}
-        <div>{{ pokemon.evo }}</div>
+            {% for evo in pokemon.evo %}
+                <div>{{ evo }}</div>
+            {% endfor %}
         {% else %}
-        <div>Aucune</div>
+            <div>Aucune</div>
         {% endif %}
 
         <h3>Capacités apprises</h3>
