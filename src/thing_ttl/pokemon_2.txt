@@ -325,8 +325,7 @@
                              :Pokemon ;
                     :BelongsToEggGroup :ground ;
                     :IsEvolutionOf :rattata ;
-                    :descriptionEvolution "condition 1 : Par montée de niveau, Évolue avec un niveau minimal de 20
-condition 2 : Par montée de niveau, Évolue avec un niveau minimal de 20 et condition horaire : night." ;
+                    :descriptionEvolution "condition 1 : Par montée de niveau, Évolue avec un niveau minimal de 20<br><br>condition 2 : Par montée de niveau, Évolue avec un niveau minimal de 20 et condition horaire : night." ;
                     :Pokemon_IsTypeOf :normal ;
                     :hasForCapaciteLearnable :swords-dance, :cut, :headbutt, :tackle, :body-slam, :take-down, :double-edge, :tail-whip, :bite, :roar, :water-gun, :ice-beam, :blizzard, :bubble-beam, :hyper-beam, :counter, :strength, :thunderbolt, :thunder-wave, :thunder, :dig, :toxic, :quick-attack, :rage, :mimic, :double-team, :defense-curl, :focus-energy, :bide, :swift, :skull-bash, :fury-swipes, :rest, :hyper-fang, :super-fang, :substitute, :thief, :snore, :curse, :protect, :scary-face, :sludge-bomb, :mud-slap, :icy-wind, :endure, :swagger, :attract, :sleep-talk, :return, :frustration, :pursuit, :iron-tail, :hidden-power, :rain-dance, :sunny-day, :crunch, :shadow-ball, :rock-smash, :uproar, :facade, :taunt, :endeavor, :secret-power, :covet, :shock-wave, :natural-gift, :pluck, :u-turn, :assurance, :last-resort, :sucker-punch, :giga-impact, :zen-headbutt, :captivate, :grass-knot, :charge-beam, :round, :retaliate, :work-up, :wild-charge, :confide, :laser-focus, :throat-chop, :stomping-tantrum ;
                     :nom "raticate" ;
@@ -460,8 +459,7 @@ condition 2 : Par montée de niveau, Évolue avec un niveau minimal de 20 et con
                              :Pokemon ;
                     :BelongsToEggGroup :ground ;
                     :IsEvolutionOf :sandshrew ;
-                    :descriptionEvolution "condition 1 : Par montée de niveau, Évolue avec un niveau minimal de 22
-condition 2 : Évolue en utilisant l'objet ice-stone." ;
+                    :descriptionEvolution "condition 1 : Par montée de niveau, Évolue avec un niveau minimal de 22<br><br>condition 2 : Évolue en utilisant l'objet ice-stone." ;
                     :Pokemon_IsTypeOf :ground ;
                     :hasForCapaciteLearnable :scratch, :swords-dance, :cut, :sand-attack, :headbutt, :body-slam, :take-down, :double-edge, :poison-sting, :pin-missile, :hyper-beam, :submission, :low-kick, :counter, :seismic-toss, :strength, :earthquake, :fissure, :dig, :toxic, :agility, :rage, :mimic, :double-team, :defense-curl, :bide, :swift, :skull-bash, :amnesia, :leech-life, :fury-swipes, :rest, :rock-slide, :super-fang, :slash, :substitute, :thief, :snore, :curse, :flail, :protect, :mud-slap, :spikes, :detect, :sandstorm, :endure, :rollout, :false-swipe, :swagger, :fury-cutter, :attract, :sleep-talk, :return, :frustration, :safeguard, :magnitude, :dynamic-punch, :rapid-spin, :iron-tail, :metal-claw, :hidden-power, :sunny-day, :rock-smash, :facade, :focus-punch, :brick-break, :knock-off, :endeavor, :secret-power, :crush-claw, :rock-tomb, :sand-tomb, :aerial-ace, :mud-shot, :covet, :gyro-ball, :natural-gift, :fling, :poison-jab, :night-slash, :x-scissor, :focus-blast, :earth-power, :giga-impact, :shadow-claw, :rock-climb, :gunk-shot, :stone-edge, :captivate, :stealth-rock, :hone-claws, :smack-down, :round, :bulldoze, :work-up, :drill-run, :confide, :high-horsepower, :throat-chop, :stomping-tantrum, :steel-roller, :scorching-sands, :tera-blast ;
                     :nom "sandslash" ;
@@ -631,8 +629,7 @@ condition 2 : Évolue en utilisant l'objet ice-stone." ;
                              :Pokemon ;
                     :BelongsToEggGroup :ground ;
                     :IsEvolutionOf :vulpix ;
-                    :descriptionEvolution "condition 1 : Évolue en utilisant l'objet fire-stone
-condition 2 : Évolue en utilisant l'objet ice-stone." ;
+                    :descriptionEvolution "condition 1 : Évolue en utilisant l'objet fire-stone<br><br>condition 2 : Évolue en utilisant l'objet ice-stone." ;
                     :Pokemon_IsTypeOf :fire ;
                     :hasForCapaciteLearnable :headbutt, :tackle, :body-slam, :take-down, :double-edge, :tail-whip, :roar, :disable, :ember, :flamethrower, :hyper-beam, :solar-beam, :fire-spin, :dig, :toxic, :hypnosis, :agility, :quick-attack, :rage, :night-shade, :mimic, :double-team, :confuse-ray, :reflect, :bide, :fire-blast, :swift, :skull-bash, :dream-eater, :rest, :substitute, :flame-wheel, :snore, :curse, :flail, :spite, :protect, :endure, :charm, :swagger, :attract, :sleep-talk, :return, :frustration, :safeguard, :pain-split, :baton-pass, :encore, :iron-tail, :hidden-power, :sunny-day, :psych-up, :shadow-ball, :heat-wave, :will-o-wisp, :memento, :facade, :helping-hand, :role-play, :imprison, :grudge, :secret-power, :weather-ball, :fake-tears, :overheat, :extrasensory, :howl, :covet, :calm-mind, :healing-wish, :natural-gift, :payback, :power-swap, :flare-blitz, :dark-pulse, :energy-ball, :giga-impact, :nasty-plot, :zen-headbutt, :captivate, :ominous-wind, :psyshock, :flame-charge, :foul-play, :round, :stored-power, :hex, :incinerate, :inferno, :tail-slap, :snarl, :confide, :mystical-fire, :baby-doll-eyes, :laser-focus, :burning-jealousy, :scorching-sands, :tera-blast ;
                     :nom "ninetales" ;
@@ -884,8 +881,7 @@ condition 2 : Évolue en utilisant l'objet ice-stone." ;
                              :Pokemon ;
                     :BelongsToEggGroup :ground ;
                     :IsEvolutionOf :meowth ;
-                    :descriptionEvolution "condition 1 : Par montée de niveau, Évolue avec un niveau minimal de 28
-condition 2 : Par montée de niveau, Évolue avec un bonheur minimal de 160." ;
+                    :descriptionEvolution "condition 1 : Par montée de niveau, Évolue avec un niveau minimal de 28<br><br>condition 2 : Par montée de niveau, Évolue avec un bonheur minimal de 160." ;
                     :Pokemon_IsTypeOf :normal ;
                     :hasForCapaciteLearnable :pay-day, :scratch, :cut, :headbutt, :body-slam, :take-down, :double-edge, :bite, :growl, :roar, :water-gun, :bubble-beam, :hyper-beam, :thunderbolt, :thunder-wave, :thunder, :dig, :toxic, :hypnosis, :agility, :rage, :mimic, :screech, :double-team, :defense-curl, :bide, :swift, :skull-bash, :amnesia, :dream-eater, :flash, :fury-swipes, :rest, :slash, :substitute, :thief, :nightmare, :snore, :curse, :spite, :protect, :feint-attack, :mud-slap, :zap-cannon, :icy-wind, :detect, :endure, :charm, :false-swipe, :swagger, :attract, :sleep-talk, :return, :frustration, :pain-split, :iron-tail, :metal-claw, :hidden-power, :rain-dance, :sunny-day, :psych-up, :shadow-ball, :fake-out, :uproar, :torment, :facade, :taunt, :helping-hand, :knock-off, :endeavor, :snatch, :secret-power, :hyper-voice, :fake-tears, :aerial-ace, :covet, :shock-wave, :water-pulse, :natural-gift, :feint, :u-turn, :payback, :assurance, :embargo, :last-resort, :dark-pulse, :night-slash, :seed-bomb, :power-gem, :switcheroo, :giga-impact, :nasty-plot, :shadow-claw, :gunk-shot, :captivate, :hone-claws, :foul-play, :round, :echoed-voice, :retaliate, :work-up, :snarl, :play-rough, :confide, :throat-chop, :skitter-smack, :lash-out, :tera-blast, :trailblaze, :chilling-water ;
                     :nom "persian" ;
@@ -1339,8 +1335,7 @@ condition 2 : Par montée de niveau, Évolue avec un bonheur minimal de 160." ;
                              :Pokemon ;
                     :BelongsToEggGroup :monster, :water1 ;
                     :IsEvolutionOf :slowpoke ;
-                    :descriptionEvolution "condition 1 : Par montée de niveau, Évolue avec un niveau minimal de 37
-condition 2 : Évolue en utilisant l'objet galarica-cuff." ;
+                    :descriptionEvolution "condition 1 : Par montée de niveau, Évolue avec un niveau minimal de 37<br><br>condition 2 : Évolue en utilisant l'objet galarica-cuff." ;
                     :Pokemon_IsTypeOf :water, :psychic ;
                     :hasForCapaciteLearnable :mega-punch, :pay-day, :ice-punch, :stomp, :mega-kick, :headbutt, :tackle, :body-slam, :take-down, :double-edge, :growl, :disable, :flamethrower, :water-gun, :hydro-pump, :surf, :ice-beam, :blizzard, :psybeam, :bubble-beam, :hyper-beam, :submission, :counter, :seismic-toss, :strength, :thunder-wave, :earthquake, :fissure, :dig, :toxic, :confusion, :psychic, :rage, :teleport, :mimic, :double-team, :withdraw, :light-screen, :reflect, :bide, :metronome, :fire-blast, :waterfall, :swift, :skull-bash, :amnesia, :dream-eater, :flash, :psywave, :rest, :tri-attack, :substitute, :nightmare, :snore, :curse, :protect, :mud-slap, :zap-cannon, :icy-wind, :endure, :swagger, :fury-cutter, :attract, :sleep-talk, :return, :frustration, :safeguard, :dynamic-punch, :iron-tail, :hidden-power, :rain-dance, :sunny-day, :psych-up, :shadow-ball, :future-sight, :rock-smash, :whirlpool, :hail, :facade, :focus-punch, :helping-hand, :trick, :magic-coat, :recycle, :brick-break, :yawn, :skill-swap, :imprison, :secret-power, :dive, :slack-off, :weather-ball, :signal-beam, :muddy-water, :aerial-ace, :iron-defense, :block, :mud-shot, :calm-mind, :water-pulse, :brine, :natural-gift, :fling, :aqua-tail, :drain-punch, :focus-blast, :giga-impact, :nasty-plot, :avalanche, :zen-headbutt, :trick-room, :captivate, :grass-knot, :wonder-room, :psyshock, :telekinesis, :foul-play, :after-you, :round, :echoed-voice, :stored-power, :scald, :heal-pulse, :incinerate, :bulldoze, :razor-shell, :confide, :psychic-terrain, :liquidation, :body-press, :expanding-force, :tera-blast, :snowscape, :chilling-water, :psychic-noise ;
                     :nom "slowbro" ;
@@ -1754,8 +1749,7 @@ condition 2 : Évolue en utilisant l'objet galarica-cuff." ;
                              :Pokemon ;
                     :BelongsToEggGroup :monster ;
                     :IsEvolutionOf :cubone ;
-                    :descriptionEvolution "condition 1 : Par montée de niveau, Évolue avec un niveau minimal de 28
-condition 2 : Par montée de niveau, Évolue avec un niveau minimal de 28 et condition horaire : night." ;
+                    :descriptionEvolution "condition 1 : Par montée de niveau, Évolue avec un niveau minimal de 28<br><br>condition 2 : Par montée de niveau, Évolue avec un niveau minimal de 28 et condition horaire : night." ;
                     :Pokemon_IsTypeOf :ground ;
                     :hasForCapaciteLearnable :mega-punch, :fire-punch, :thunder-punch, :swords-dance, :mega-kick, :headbutt, :body-slam, :take-down, :thrash, :double-edge, :tail-whip, :leer, :growl, :flamethrower, :water-gun, :ice-beam, :blizzard, :bubble-beam, :hyper-beam, :submission, :low-kick, :counter, :seismic-toss, :strength, :earthquake, :fissure, :dig, :toxic, :rage, :mimic, :screech, :double-team, :focus-energy, :bide, :bone-club, :fire-blast, :swift, :skull-bash, :bonemerang, :rest, :rock-slide, :substitute, :thief, :snore, :curse, :protect, :mud-slap, :icy-wind, :detect, :bone-rush, :outrage, :sandstorm, :endure, :false-swipe, :swagger, :fury-cutter, :attract, :sleep-talk, :return, :frustration, :dynamic-punch, :iron-tail, :hidden-power, :sunny-day, :rock-smash, :uproar, :facade, :focus-punch, :brick-break, :knock-off, :endeavor, :secret-power, :rock-tomb, :aerial-ace, :iron-defense, :natural-gift, :fling, :focus-blast, :earth-power, :giga-impact, :rock-climb, :iron-head, :stone-edge, :captivate, :stealth-rock, :smack-down, :round, :echoed-voice, :incinerate, :retaliate, :bulldoze, :confide, :power-up-punch, :laser-focus, :throat-chop, :brutal-swing, :stomping-tantrum, :scorching-sands ;
                     :nom "marowak" ;
@@ -3311,8 +3305,7 @@ condition 2 : Par montée de niveau, Évolue avec un niveau minimal de 28 et con
                              :Pokemon ;
                     :BelongsToEggGroup :monster, :water1 ;
                     :IsEvolutionOf :slowpoke ;
-                    :descriptionEvolution "condition 1 : Par échange, Évolue en tenant l'objet kings-rock
-condition 2 : Évolue en utilisant l'objet galarica-wreath." ;
+                    :descriptionEvolution "condition 1 : Par échange, Évolue en tenant l'objet kings-rock<br><br>condition 2 : Évolue en utilisant l'objet galarica-wreath." ;
                     :Pokemon_IsTypeOf :water, :psychic ;
                     :hasForCapaciteLearnable :mega-punch, :pay-day, :fire-punch, :ice-punch, :thunder-punch, :mega-kick, :headbutt, :tackle, :body-slam, :take-down, :double-edge, :growl, :disable, :flamethrower, :water-gun, :hydro-pump, :surf, :ice-beam, :blizzard, :psybeam, :hyper-beam, :counter, :seismic-toss, :strength, :thunder-wave, :earthquake, :dig, :toxic, :confusion, :psychic, :mimic, :double-team, :light-screen, :reflect, :metronome, :fire-blast, :waterfall, :swift, :amnesia, :dream-eater, :flash, :rest, :rock-slide, :tri-attack, :substitute, :nightmare, :snore, :curse, :protect, :mud-slap, :zap-cannon, :icy-wind, :endure, :swagger, :fury-cutter, :attract, :sleep-talk, :return, :frustration, :safeguard, :dynamic-punch, :iron-tail, :hidden-power, :rain-dance, :sunny-day, :psych-up, :shadow-ball, :future-sight, :rock-smash, :whirlpool, :hail, :facade, :focus-punch, :trick, :magic-coat, :recycle, :brick-break, :yawn, :skill-swap, :imprison, :secret-power, :dive, :slack-off, :weather-ball, :rock-tomb, :signal-beam, :muddy-water, :iron-defense, :block, :mud-shot, :calm-mind, :water-pulse, :brine, :natural-gift, :fling, :trump-card, :aqua-tail, :power-gem, :drain-punch, :focus-blast, :giga-impact, :nasty-plot, :avalanche, :zen-headbutt, :trick-room, :captivate, :grass-knot, :wonder-room, :psyshock, :telekinesis, :foul-play, :after-you, :round, :echoed-voice, :stored-power, :ally-switch, :scald, :heal-pulse, :incinerate, :quash, :bulldoze, :dragon-tail, :razor-shell, :confide, :power-up-punch, :laser-focus, :psychic-terrain, :liquidation, :expanding-force, :tera-blast, :chilly-reception, :snowscape, :chilling-water, :psychic-noise ;
                     :nom "slowking" ;
@@ -5789,8 +5782,7 @@ condition 2 : Évolue en utilisant l'objet galarica-wreath." ;
                              :Pokemon ;
                     :BelongsToEggGroup :water1, :dragon ;
                     :IsEvolutionOf :feebas ;
-                    :descriptionEvolution "condition 1 : Par montée de niveau, Évolue avec une beauté minimale de 170
-condition 2 : Par échange, Évolue en tenant l'objet prism-scale." ;
+                    :descriptionEvolution "condition 1 : Par montée de niveau, Évolue avec une beauté minimale de 170<br><br>condition 2 : Par échange, Évolue en tenant l'objet prism-scale." ;
                     :Pokemon_IsTypeOf :water ;
                     :hasForCapaciteLearnable :bind, :tackle, :body-slam, :wrap, :take-down, :double-edge, :mist, :water-gun, :hydro-pump, :surf, :ice-beam, :blizzard, :hyper-beam, :toxic, :hypnosis, :mimic, :double-team, :recover, :confuse-ray, :light-screen, :haze, :waterfall, :swift, :splash, :rest, :substitute, :snore, :flail, :protect, :mud-slap, :icy-wind, :endure, :swagger, :attract, :sleep-talk, :return, :frustration, :safeguard, :dragon-breath, :iron-tail, :hidden-power, :twister, :rain-dance, :mirror-coat, :psych-up, :whirlpool, :hail, :facade, :helping-hand, :magic-coat, :imprison, :refresh, :secret-power, :dive, :weather-ball, :tickle, :muddy-water, :mud-shot, :water-sport, :dragon-dance, :water-pulse, :brine, :natural-gift, :aqua-ring, :aqua-tail, :dragon-pulse, :giga-impact, :avalanche, :iron-head, :captivate, :coil, :round, :scald, :bulldoze, :dragon-tail, :disarming-voice, :draining-kiss, :confide, :laser-focus, :brutal-swing, :breaking-swipe, :life-dew, :scale-shot, :skitter-smack, :flip-turn, :triple-axel, :tera-blast, :chilling-water, :dragon-cheer, :alluring-voice ;
                     :nom "milotic" ;
@@ -7621,12 +7613,7 @@ condition 2 : Par échange, Évolue en tenant l'objet prism-scale." ;
                              :Pokemon ;
                     :BelongsToEggGroup :mineral ;
                     :IsEvolutionOf :magneton ;
-                    :descriptionEvolution "condition 1 : Par montée de niveau, Évolue en éttant dans le lieu : mt-coronet
-condition 2 : Par montée de niveau, Évolue en éttant dans le lieu : chargestone-cave
-condition 3 : Par montée de niveau, Évolue en éttant dans le lieu : kalos-route-13
-condition 4 : Par montée de niveau, Évolue en éttant dans le lieu : blush-mountain
-condition 5 : Par montée de niveau, Évolue en éttant dans le lieu : vast-poni-canyon
-condition 6 : Évolue en utilisant l'objet thunder-stone." ;
+                    :descriptionEvolution "condition 1 : Par montée de niveau, Évolue en éttant dans le lieu : mt-coronet<br><br>condition 2 : Par montée de niveau, Évolue en éttant dans le lieu : chargestone-cave<br><br>condition 3 : Par montée de niveau, Évolue en éttant dans le lieu : kalos-route-13<br><br>condition 4 : Par montée de niveau, Évolue en éttant dans le lieu : blush-mountain<br><br>condition 5 : Par montée de niveau, Évolue en éttant dans le lieu : vast-poni-canyon<br><br>condition 6 : Évolue en utilisant l'objet thunder-stone." ;
                     :Pokemon_IsTypeOf :electric, :steel ;
                     :hasForCapaciteLearnable :tackle, :body-slam, :take-down, :double-edge, :supersonic, :sonic-boom, :hyper-beam, :thunder-shock, :thunderbolt, :thunder-wave, :thunder, :toxic, :screech, :double-team, :confuse-ray, :barrier, :light-screen, :reflect, :self-destruct, :swift, :flash, :explosion, :rest, :tri-attack, :substitute, :snore, :protect, :zap-cannon, :lock-on, :sandstorm, :endure, :rollout, :swagger, :spark, :sleep-talk, :return, :frustration, :hidden-power, :rain-dance, :sunny-day, :mirror-coat, :psych-up, :facade, :charge, :helping-hand, :magic-coat, :recycle, :secret-power, :metal-sound, :signal-beam, :iron-defense, :shock-wave, :gravity, :gyro-ball, :natural-gift, :magnet-rise, :giga-impact, :mirror-shot, :flash-cannon, :discharge, :iron-head, :magnet-bomb, :charge-beam, :heavy-slam, :electro-ball, :round, :ally-switch, :volt-switch, :electroweb, :wild-charge, :confide, :eerie-impulse, :magnetic-flux, :electric-terrain, :body-press, :steel-beam, :steel-roller, :rising-voltage, :tera-blast, :hard-press, :supercell-slam ;
                     :nom "magnezone" ;
@@ -7762,10 +7749,7 @@ condition 6 : Évolue en utilisant l'objet thunder-stone." ;
                              :Pokemon ;
                     :BelongsToEggGroup :ground ;
                     :IsEvolutionOf :eevee ;
-                    :descriptionEvolution "condition 1 : Par montée de niveau, Évolue en éttant dans le lieu : eterna-forest
-condition 2 : Par montée de niveau, Évolue en éttant dans le lieu : pinwheel-forest
-condition 3 : Par montée de niveau, Évolue en éttant dans le lieu : kalos-route-20
-condition 4 : Évolue en utilisant l'objet leaf-stone." ;
+                    :descriptionEvolution "condition 1 : Par montée de niveau, Évolue en éttant dans le lieu : eterna-forest<br><br>condition 2 : Par montée de niveau, Évolue en éttant dans le lieu : pinwheel-forest<br><br>condition 3 : Par montée de niveau, Évolue en éttant dans le lieu : kalos-route-20<br><br>condition 4 : Évolue en utilisant l'objet leaf-stone." ;
                     :Pokemon_IsTypeOf :grass ;
                     :hasForCapaciteLearnable :pay-day, :swords-dance, :sand-attack, :headbutt, :tackle, :body-slam, :take-down, :double-edge, :tail-whip, :bite, :growl, :roar, :hyper-beam, :strength, :leech-seed, :razor-leaf, :solar-beam, :dig, :toxic, :quick-attack, :mimic, :double-team, :focus-energy, :swift, :flash, :rest, :substitute, :snore, :curse, :protect, :mud-slap, :giga-drain, :endure, :charm, :swagger, :fury-cutter, :attract, :sleep-talk, :heal-bell, :return, :frustration, :baton-pass, :iron-tail, :synthesis, :hidden-power, :rain-dance, :sunny-day, :shadow-ball, :rock-smash, :facade, :nature-power, :helping-hand, :knock-off, :secret-power, :hyper-voice, :weather-ball, :fake-tears, :grass-whistle, :bullet-seed, :aerial-ace, :mud-shot, :covet, :magical-leaf, :calm-mind, :leaf-blade, :natural-gift, :copycat, :last-resort, :worry-seed, :seed-bomb, :x-scissor, :energy-ball, :giga-impact, :leaf-storm, :captivate, :grass-knot, :round, :echoed-voice, :stored-power, :retaliate, :work-up, :confide, :baby-doll-eyes, :solar-blade, :leafage, :laser-focus, :grassy-glide, :tera-blast, :trailblaze, :alluring-voice ;
                     :nom "leafeon" ;
@@ -7782,10 +7766,7 @@ condition 4 : Évolue en utilisant l'objet leaf-stone." ;
                              :Pokemon ;
                     :BelongsToEggGroup :ground ;
                     :IsEvolutionOf :eevee ;
-                    :descriptionEvolution "condition 1 : Par montée de niveau, Évolue en éttant dans le lieu : sinnoh-route-217
-condition 2 : Par montée de niveau, Évolue en éttant dans le lieu : twist-mountain
-condition 3 : Par montée de niveau, Évolue en éttant dans le lieu : frost-cavern
-condition 4 : Évolue en utilisant l'objet ice-stone." ;
+                    :descriptionEvolution "condition 1 : Par montée de niveau, Évolue en éttant dans le lieu : sinnoh-route-217<br><br>condition 2 : Par montée de niveau, Évolue en éttant dans le lieu : twist-mountain<br><br>condition 3 : Par montée de niveau, Évolue en éttant dans le lieu : frost-cavern<br><br>condition 4 : Évolue en utilisant l'objet ice-stone." ;
                     :Pokemon_IsTypeOf :ice ;
                     :hasForCapaciteLearnable :pay-day, :sand-attack, :headbutt, :tackle, :body-slam, :take-down, :double-edge, :tail-whip, :bite, :growl, :roar, :ice-beam, :blizzard, :hyper-beam, :strength, :dig, :toxic, :quick-attack, :mimic, :double-team, :barrier, :haze, :focus-energy, :swift, :rest, :substitute, :snore, :curse, :powder-snow, :protect, :mud-slap, :icy-wind, :endure, :charm, :swagger, :attract, :sleep-talk, :heal-bell, :return, :frustration, :baton-pass, :iron-tail, :hidden-power, :rain-dance, :sunny-day, :mirror-coat, :shadow-ball, :rock-smash, :hail, :facade, :helping-hand, :secret-power, :hyper-voice, :weather-ball, :fake-tears, :signal-beam, :icicle-spear, :mud-shot, :covet, :calm-mind, :water-pulse, :gravity, :natural-gift, :copycat, :last-resort, :aqua-tail, :giga-impact, :avalanche, :ice-shard, :ice-fang, :captivate, :round, :echoed-voice, :stored-power, :retaliate, :frost-breath, :work-up, :freeze-dry, :confide, :baby-doll-eyes, :laser-focus, :aurora-veil, :triple-axel, :tera-blast, :snowscape, :chilling-water, :alluring-voice ;
                     :nom "glaceon" ;
@@ -7870,12 +7851,7 @@ condition 4 : Évolue en utilisant l'objet ice-stone." ;
                              :Pokemon ;
                     :BelongsToEggGroup :mineral ;
                     :IsEvolutionOf :nosepass ;
-                    :descriptionEvolution "condition 1 : Par montée de niveau, Évolue en éttant dans le lieu : mt-coronet
-condition 2 : Par montée de niveau, Évolue en éttant dans le lieu : chargestone-cave
-condition 3 : Par montée de niveau, Évolue en éttant dans le lieu : kalos-route-13
-condition 4 : Par montée de niveau, Évolue en éttant dans le lieu : blush-mountain
-condition 5 : Par montée de niveau, Évolue en éttant dans le lieu : vast-poni-canyon
-condition 6 : Évolue en utilisant l'objet thunder-stone." ;
+                    :descriptionEvolution "condition 1 : Par montée de niveau, Évolue en éttant dans le lieu : mt-coronet<br><br>condition 2 : Par montée de niveau, Évolue en éttant dans le lieu : chargestone-cave<br><br>condition 3 : Par montée de niveau, Évolue en éttant dans le lieu : kalos-route-13<br><br>condition 4 : Par montée de niveau, Évolue en éttant dans le lieu : blush-mountain<br><br>condition 5 : Par montée de niveau, Évolue en éttant dans le lieu : vast-poni-canyon<br><br>condition 6 : Évolue en utilisant l'objet thunder-stone." ;
                     :Pokemon_IsTypeOf :rock, :steel ;
                     :hasForCapaciteLearnable :fire-punch, :ice-punch, :thunder-punch, :headbutt, :tackle, :body-slam, :take-down, :double-edge, :hyper-beam, :strength, :thunderbolt, :thunder-wave, :thunder, :rock-throw, :earthquake, :toxic, :double-team, :harden, :explosion, :rest, :rock-slide, :tri-attack, :substitute, :snore, :curse, :protect, :mud-slap, :zap-cannon, :lock-on, :sandstorm, :endure, :rollout, :swagger, :spark, :attract, :sleep-talk, :return, :frustration, :pain-split, :hidden-power, :sunny-day, :ancient-power, :rock-smash, :torment, :facade, :taunt, :helping-hand, :magic-coat, :secret-power, :rock-tomb, :metal-sound, :sand-tomb, :iron-defense, :block, :rock-blast, :shock-wave, :gravity, :natural-gift, :magnet-rise, :rock-polish, :power-gem, :earth-power, :giga-impact, :flash-cannon, :discharge, :iron-head, :magnet-bomb, :stone-edge, :captivate, :stealth-rock, :head-smash, :wide-guard, :telekinesis, :smack-down, :heavy-slam, :round, :ally-switch, :volt-switch, :bulldoze, :confide, :magnetic-flux, :dazzling-gleam, :high-horsepower, :stomping-tantrum, :body-press, :steel-beam, :meteor-beam, :tera-blast, :hard-press, :supercell-slam ;
                     :nom "probopass" ;
@@ -11545,8 +11521,7 @@ condition 6 : Évolue en utilisant l'objet thunder-stone." ;
                              :Pokemon ;
                     :BelongsToEggGroup :ground ;
                     :IsEvolutionOf :eevee ;
-                    :descriptionEvolution "condition 1 : Par montée de niveau, Évolue en connaissant un move de type : fairy et avec une affection minimale de 2
-condition 2 : Par montée de niveau, Évolue en connaissant un move de type : fairy et avec un bonheur minimal de 160." ;
+                    :descriptionEvolution "condition 1 : Par montée de niveau, Évolue en connaissant un move de type : fairy et avec une affection minimale de 2<br><br>condition 2 : Par montée de niveau, Évolue en connaissant un move de type : fairy et avec un bonheur minimal de 160." ;
                     :Pokemon_IsTypeOf :fairy ;
                     :hasForCapaciteLearnable :pay-day, :cut, :sand-attack, :tackle, :body-slam, :take-down, :double-edge, :tail-whip, :bite, :growl, :roar, :hyper-beam, :dig, :toxic, :psychic, :quick-attack, :mimic, :double-team, :light-screen, :reflect, :focus-energy, :swift, :flash, :rest, :substitute, :snore, :curse, :protect, :endure, :charm, :swagger, :attract, :sleep-talk, :heal-bell, :return, :frustration, :safeguard, :baton-pass, :iron-tail, :hidden-power, :rain-dance, :sunny-day, :psych-up, :shadow-ball, :facade, :helping-hand, :magic-coat, :skill-swap, :secret-power, :hyper-voice, :weather-ball, :fake-tears, :covet, :magical-leaf, :calm-mind, :copycat, :last-resort, :giga-impact, :psyshock, :telekinesis, :round, :echoed-voice, :stored-power, :retaliate, :work-up, :disarming-voice, :draining-kiss, :misty-terrain, :play-rough, :fairy-wind, :moonblast, :confide, :mystical-fire, :dazzling-gleam, :baby-doll-eyes, :laser-focus, :misty-explosion, :tera-blast, :trailblaze, :alluring-voice ;
                     :nom "sylveon" ;
@@ -12164,9 +12139,7 @@ condition 2 : Par montée de niveau, Évolue en connaissant un move de type : fa
                              :Pokemon ;
                     :BelongsToEggGroup :bug ;
                     :IsEvolutionOf :charjabug ;
-                    :descriptionEvolution "condition 1 : Par montée de niveau, Évolue en éttant dans le lieu : vast-poni-canyon
-condition 2 : Par montée de niveau, Évolue en éttant dans le lieu : blush-mountain
-condition 3 : Évolue en utilisant l'objet thunder-stone." ;
+                    :descriptionEvolution "condition 1 : Par montée de niveau, Évolue en éttant dans le lieu : vast-poni-canyon<br><br>condition 2 : Par montée de niveau, Évolue en éttant dans le lieu : blush-mountain<br><br>condition 3 : Évolue en utilisant l'objet thunder-stone." ;
                     :Pokemon_IsTypeOf :bug, :electric ;
                     :hasForCapaciteLearnable :vice-grip, :guillotine, :fly, :take-down, :bite, :hyper-beam, :solar-beam, :string-shot, :thunderbolt, :thunder-wave, :thunder, :dig, :toxic, :agility, :screech, :double-team, :harden, :light-screen, :swift, :rest, :substitute, :snore, :protect, :mud-slap, :zap-cannon, :endure, :swagger, :spark, :attract, :sleep-talk, :return, :frustration, :baton-pass, :hidden-power, :rain-dance, :crunch, :facade, :charge, :signal-beam, :iron-defense, :mud-shot, :shock-wave, :roost, :magnet-rise, :poison-jab, :air-slash, :x-scissor, :bug-buzz, :energy-ball, :giga-impact, :flash-cannon, :discharge, :bug-bite, :charge-beam, :electro-ball, :round, :sky-drop, :acrobatics, :volt-switch, :struggle-bug, :bulldoze, :electroweb, :wild-charge, :sticky-web, :confide, :eerie-impulse, :electric-terrain, :laser-focus, :lunge, :rising-voltage, :skitter-smack, :dual-wingbeat, :tera-blast, :pounce, :supercell-slam ;
                     :nom "vikavolt" ;
@@ -12199,8 +12172,7 @@ condition 3 : Évolue en utilisant l'objet thunder-stone." ;
                              :Pokemon ;
                     :BelongsToEggGroup :water3 ;
                     :IsEvolutionOf :crabrawler ;
-                    :descriptionEvolution "condition 1 : Par montée de niveau, Évolue en éttant dans le lieu : mount-lanakila
-condition 2 : Évolue en utilisant l'objet ice-stone." ;
+                    :descriptionEvolution "condition 1 : Par montée de niveau, Évolue en éttant dans le lieu : mount-lanakila<br><br>condition 2 : Évolue en utilisant l'objet ice-stone." ;
                     :Pokemon_IsTypeOf :fighting, :ice ;
                     :hasForCapaciteLearnable :ice-punch, :thunder-punch, :slam, :body-slam, :take-down, :leer, :ice-beam, :blizzard, :bubble-beam, :hyper-beam, :earthquake, :dig, :toxic, :double-team, :swift, :amnesia, :bubble, :dizzy-punch, :rest, :rock-slide, :substitute, :thief, :snore, :reversal, :protect, :scary-face, :mud-slap, :icy-wind, :endure, :swagger, :attract, :sleep-talk, :return, :frustration, :dynamic-punch, :pursuit, :hidden-power, :rain-dance, :sunny-day, :rock-smash, :hail, :facade, :focus-punch, :helping-hand, :superpower, :brick-break, :knock-off, :endeavor, :rock-tomb, :iron-defense, :block, :bulk-up, :mud-shot, :close-combat, :payback, :fling, :drain-punch, :focus-blast, :giga-impact, :avalanche, :zen-headbutt, :gunk-shot, :iron-head, :stone-edge, :round, :scald, :bulldoze, :frost-breath, :work-up, :dual-chop, :confide, :power-up-punch, :ice-hammer, :brutal-swing, :stomping-tantrum, :liquidation, :body-press, :coaching, :tera-blast, :ice-spinner, :snowscape, :chilling-water, :hard-press, :upper-hand ;
                     :nom "crabominable" ;
@@ -14843,9 +14815,7 @@ condition 2 : Évolue en utilisant l'objet ice-stone." ;
                              :Pokemon ;
                     :BelongsToEggGroup :water2 ;
                     :IsEvolutionOf :qwilfish ;
-                    :descriptionEvolution "condition 1 : Utiliser 20 fois la capacité : barb-barrage
-condition 2 : Par montée de niveau, Évolue en connaissant le move : barb-barrage
-condition 3 : Monter de niveau après avoir utilisé 20 fois la capacité : barb-barrage." ;
+                    :descriptionEvolution "condition 1 : Utiliser 20 fois la capacité : barb-barrage<br><br>condition 2 : Par montée de niveau, Évolue en connaissant le move : barb-barrage<br><br>condition 3 : Monter de niveau après avoir utilisé 20 fois la capacité : barb-barrage." ;
                     :Pokemon_IsTypeOf :dark, :poison ;
                     :hasForCapaciteLearnable :swords-dance, :tackle, :take-down, :double-edge, :poison-sting, :pin-missile, :bite, :hydro-pump, :surf, :ice-beam, :blizzard, :hyper-beam, :toxic, :agility, :harden, :minimize, :haze, :self-destruct, :waterfall, :rest, :substitute, :curse, :reversal, :spite, :protect, :scary-face, :sludge-bomb, :spikes, :destiny-bond, :icy-wind, :endure, :sleep-talk, :pain-split, :rain-dance, :crunch, :shadow-ball, :stockpile, :spit-up, :facade, :taunt, :mud-shot, :poison-tail, :water-pulse, :gyro-ball, :brine, :acupressure, :toxic-spikes, :poison-jab, :dark-pulse, :aqua-tail, :giga-impact, :gunk-shot, :venoshock, :sludge-wave, :fell-stinger, :throat-chop, :smart-strike, :liquidation, :scale-shot, :lash-out, :barb-barrage, :tera-blast, :chilling-water ;
                     :nom "overqwil" ;
@@ -21674,3 +21644,4 @@ condition 3 : Monter de niveau après avoir utilisé 20 fois la capacité : barb
                     :base_Defense_Speciale 101 ;
                     :base_Vitesse 87 ;
                     :url_img "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10325.png" .
+

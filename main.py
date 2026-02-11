@@ -24,7 +24,7 @@ app.add_middleware(
 
 # charger ontologie
 g = Graph()
-g.parse("./turtle/Onto_web.ttl", format="turtle")
+g.parse("./turtle/Onto_webback.ttl", format="turtle")
 ONTO = Namespace("http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/")
 
 # Appliquer le raisonnement RDFS / OWL-RL
@@ -136,74 +136,6 @@ def search_objet(q: str = ""):
         
     return sorted_result
 
-
-
-# @app.get("/pokemon/{pokemon_name}", response_class=HTMLResponse)
-# def pokemon_page(request: Request, pokemon_name: str):
-
-#     pokemon_name_clean = pokemon_name.strip()
-#     prefix = f"PREFIX : <{str(ONTO)}>"
-
-#     query = f"""
-#     {prefix}
-
-#     SELECT ?p ?img ?type ?type_img ?egg ?evo
-#            ?pv ?atk ?defense ?spatk ?spdef ?vit
-#     WHERE {{
-
-#         ?p a :Pokemon ;
-#            :nom "{pokemon_name_clean}" ;
-#            :url_img ?img .
-
-#         OPTIONAL {{ ?p :Pokemon_IsTypeOf ?type .
-#                    ?type :url_img ?type_img . }}
-
-#         OPTIONAL {{ ?p :BelongsToEggGroup ?egg . }}
-#         OPTIONAL {{ ?p :IsEvolutionOf ?evo . }}
-
-#         OPTIONAL {{ ?p :base_PV ?pv . }}
-#         OPTIONAL {{ ?p :base_Attaque ?atk . }}
-#         OPTIONAL {{ ?p :base_Defense ?defense . }}
-#         OPTIONAL {{ ?p :base_Attaque_Speciale ?spatk . }}
-#         OPTIONAL {{ ?p :base_Defense_Speciale ?spdef . }}
-#         OPTIONAL {{ ?p :base_Vitesse ?vit . }}
-#     }}
-#     """
-
-#     rows = list(g.query(query))
-
-#     if not rows:
-#         raise HTTPException(status_code=404, detail="Pokémon non trouvé")
-
-#     pokemon = {
-#         "name": pokemon_name_clean,
-#         "img": str(rows[0].img),
-#         "types": [],
-#         "eggs": [],
-#         "evo": None,
-#         "stats": {
-#             "pv": int(rows[0].pv) if rows[0].pv else 0,
-#             "atk": int(rows[0].atk) if rows[0].atk else 0,
-#             "defense": int(rows[0].defense) if rows[0].defense else 0,
-#             "spatk": int(rows[0].spatk) if rows[0].spatk else 0,
-#             "spdef": int(rows[0].spdef) if rows[0].spdef else 0,
-#             "vit": int(rows[0].vit) if rows[0].vit else 0
-#         }
-#     }
-
-#     for r in rows:
-#         if r.type_img and str(r.type_img) not in pokemon["types"]:
-#             pokemon["types"].append(str(r.type_img))
-#         if r.egg and str(r.egg) not in pokemon["eggs"]:
-#             pokemon["eggs"].append(str(r.egg))
-#         print(r.evo)
-#         if r.evo and pokemon["evo"] is not None and str(r.evo) not in pokemon["evo"]:
-#             pokemon["evo"] = str(r.evo)
-
-#     return templates.TemplateResponse("pokemon.html", {
-#         "request": request,
-#         "pokemon": pokemon
-#     })
 
 
 @app.get("/objet/{item_name}", response_class=HTMLResponse)
@@ -410,20 +342,23 @@ def pokemon_page(request: Request, pokemon_name: str):
         'http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Capacite_statut'   : 'https://www.pokepedia.fr/images/8/8a/Miniature_Cat%C3%A9gorie_Statut_HOME.png'
     }
     
-
+    print(types)
     
-    pokemon["moves"] = []
-    for r in rows_moves_2:
-        pokemon["moves"].append({
-            "uri": str(r.move),
-            "name": str(r.move_name),
-            "category": image_capacite[str(r.categorie)] if r.categorie else None,
-            "type_img": types[str(r.type)] if r.type else None,
-            "power": int(r.puissance) if r.puissance else None,
-            "accuracy": int(r.precision) if r.precision else None,
-            "pp": int(r.pp) if r.pp else None,
-            "priority": int(r.priorite) if r.priorite else 0,
-        })
+    try:
+        pokemon["moves"] = []
+        for r in rows_moves_2:
+            pokemon["moves"].append({
+                "uri": str(r.move),
+                "name": str(r.move_name),
+                "category": image_capacite[str(r.categorie)] if r.categorie else None,
+                "type_img": types[str(r.type)] if r.type else None,
+                "power": int(r.puissance) if r.puissance else None,
+                "accuracy": int(r.precision) if r.precision else None,
+                "pp": int(r.pp) if r.pp else None,
+                "priority": int(r.priorite) if r.priorite else 0,
+            })
+    except:
+        print(types)
 
     tf = t.time() - t0
     print(f"requête effectuée en {tf}s")
