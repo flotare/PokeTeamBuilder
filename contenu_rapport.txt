@@ -18,4 +18,6 @@ pip install owlrl rdflib fastapi
 
 
 Todo :
-- Page pokemon --> chaîne d'évolution, stats
+- Page pokemon --> chaîne d'évolution + oeufs
+- Page objet --> Afficher info objet (simple)
+- Page oeufs --> Afficher la liste des pokés présents dans les groupes

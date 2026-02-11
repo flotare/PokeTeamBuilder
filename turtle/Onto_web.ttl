@@ -1,10 +1,10 @@
-@prefix : <http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/> .
+@prefix : <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.semanticweb.org/arthu/ontologies/2026/0/untitled-ontology-4/> .
+@base <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/> .
 
 <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon> rdf:type owl:Ontology ;
                                                                   owl:versionIRI <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon> .
@@ -146,11 +146,6 @@
           rdfs:range <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Type_pokemon> .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/PokemonhasForCapaciteCapacite
-<http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/PokemonhasForCapaciteCapacite> rdf:type owl:ObjectProperty ;
-                       owl:deprecated "true"^^xsd:boolean .
-
-
 ###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/ResistantTo
 <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/ResistantTo> rdf:type owl:ObjectProperty ;
      rdfs:subPropertyOf owl:topObjectProperty ;
@@ -192,16 +187,7 @@ rdfs:range <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Type_
 <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/hasForCapaciteApprise> rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf owl:topObjectProperty ;
                rdfs:domain <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Pokemon> ;
-               rdfs:range [ rdf:type owl:Restriction ;
-                            owl:onProperty <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/hasForCapaciteApprise> ;
-                            owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                            owl:onClass <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Capacite>
-                          ] ,
-                          [ rdf:type owl:Restriction ;
-                            owl:onProperty <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/hasForCapaciteApprise> ;
-                            owl:maxQualifiedCardinality "4"^^xsd:nonNegativeInteger ;
-                            owl:onClass <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Capacite>
-                          ] ;
+               rdfs:range <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Capacite> ;
                rdfs:comment "Correspond au lien entre un pokémon (Pokemon) et les 1 à 4 capacités (Capacite) que ce pokémon connaît actuellement."@fr .
 
 
@@ -238,12 +224,6 @@ rdfs:range <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Type_
              rdfs:comment "Lien entre une capacité (Capacite) et une de ses caractéristique (Caractéristique_Capacité)."@fr .
 
 
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/hasForEvolution
-<http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/hasForEvolution> rdf:type owl:ObjectProperty ;
-         rdfs:comment "DEPRECATED Lien entre un pokémon (Pokemon) et un de ses pokémons (Pokemon) en lequel il évolue."@fr ;
-         owl:deprecated "true"^^xsd:boolean .
-
-
 ###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/hasForFoundableItems
 <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/hasForFoundableItems> rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf owl:topObjectProperty ;
@@ -256,11 +236,6 @@ rdfs:range <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Type_
       rdfs:subPropertyOf owl:topObjectProperty ;
       rdfs:domain <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Version_Jeu> ;
       rdfs:range <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Region> .
-
-
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/isTypeOf
-<http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/isTypeOf> rdf:type owl:ObjectProperty ;
-  owl:deprecated "true"^^xsd:boolean .
 
 
 #################################################################
@@ -348,13 +323,6 @@ rdfs:range <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Type_
                                                                      rdfs:subPropertyOf owl:topDataProperty ;
                                                                      rdfs:domain owl:Thing ;
                                                                      rdfs:range rdf:langString .
-
-
-###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/precision_attaque
-<http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/precision_attaque> rdf:type owl:DatatypeProperty ;
-           rdfs:domain <http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Precision_capacite> ;
-           rdfs:range xsd:decimal ;
-           owl:deprecated "true"^^xsd:boolean .
 
 
 ###  http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/precision_capacite

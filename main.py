@@ -55,25 +55,45 @@ def search_pokemon(q: str = ""):
     query = f"""
     PREFIX : <{str(ONTO)}>
 
-    SELECT ?pokemon ?nom
+    SELECT ?pokemon ?nom ?url_img ?type ?type_img
     WHERE {{
         ?pokemon a :Pokemon ;
                  :nom ?nom .
+        OPTIONAL {{ ?pokemon :url_img ?url_img . }}
+
+        OPTIONAL {{
+            ?pokemon :Pokemon_IsTypeOf ?type .
+            OPTIONAL {{ ?type :url_img ?type_img . }}
+        }}
+
         FILTER(CONTAINS(LCASE(STR(?nom)), LCASE("{q}")))
     }}
-    LIMIT 10
     """
 
-    results = []
-
+    # dictionnaire pour fusionner les lignes d'un même Pokémon
+    results = {}
     for row in g.query(query):
-        results.append({
-            "name": str(row.nom),
-            "img1": "https://picsum.photos/80",
-            "img2": "https://picsum.photos/81"
+        key = str(row.nom)
+        if key not in results:
+            results[key] = {
+                "name": key,
+                "img": str(row.url_img) if row.url_img else None,
+                "types": []
+            }
+
+        # ajoute le type et son image
+        results[key]["types"].append({
+            "type_name": str(row.type).split("#")[-1],
+            "type_img": str(row.type_img) if row.type_img else None
         })
 
-    return results
+    res = list(results.values())
+    res = sorted(res, 
+        key=lambda poke_dict: 
+            (not poke_dict["name"].startswith(q.lower()) , poke_dict["name"])
+    )
+
+    return res[:10]
 
 
 @app.get("/search/objet")
@@ -86,13 +106,13 @@ def search_objet(q: str = ""):
     query = f"""
     {prefix}
 
-    SELECT ?entity ?nom
+    SELECT ?entity ?nom ?url_img
     WHERE {{
         ?entity a :Objet ;
-                :nom ?nom .
+                :nom ?nom ;
+                :url_img ?url_img.
         FILTER(REGEX(STR(?nom), "{q}", "i"))
     }}
-    LIMIT 10
     """
 
     results = []
@@ -100,42 +120,84 @@ def search_objet(q: str = ""):
     for row in g.query(query):
         results.append({
             "name": str(row.nom),
-            "img1": "https://picsum.photos/80",
-            "img2": "https://picsum.photos/81"
+            "img": str(row.url_img),
         })
+    
+    sorted_result = sorted(
+        results,
+        key=lambda item: (
+            not item["name"].lower().startswith(q.lower()),
+            item["name"].lower()
+        )
+    )
+        
+        
+    return sorted_result
 
-    return results
 
 
-
-# Endpoint dynamique par Pokémon
 @app.get("/pokemon/{pokemon_name}", response_class=HTMLResponse)
 def pokemon_page(request: Request, pokemon_name: str):
+
     pokemon_name_clean = pokemon_name.strip()
     prefix = f"PREFIX : <{str(ONTO)}>"
 
     query = f"""
     {prefix}
-    SELECT ?prop ?val
+
+    SELECT ?p ?img ?type ?type_img ?egg ?evo
+           ?pv ?atk ?defense ?spatk ?spdef ?vit
     WHERE {{
+
         ?p a :Pokemon ;
-           :nom "{pokemon_name_clean}" .
-        ?p ?prop ?val .
+           :nom "{pokemon_name_clean}" ;
+           :url_img ?img .
+
+        OPTIONAL {{ ?p :Pokemon_IsTypeOf ?type .
+                   ?type :url_img ?type_img . }}
+
+        OPTIONAL {{ ?p :BelongsToEggGroup ?egg . }}
+        OPTIONAL {{ ?p :IsEvolutionOf ?evo . }}
+
+        OPTIONAL {{ ?p :base_PV ?pv . }}
+        OPTIONAL {{ ?p :base_Attaque ?atk . }}
+        OPTIONAL {{ ?p :base_Defense ?defense . }}
+        OPTIONAL {{ ?p :base_Attaque_Speciale ?spatk . }}
+        OPTIONAL {{ ?p :base_Defense_Speciale ?spdef . }}
+        OPTIONAL {{ ?p :base_Vitesse ?vit . }}
     }}
     """
 
-    results = []
-    for row in g.query(query):
-        prop = str(row.prop)
-        val = str(row.val)
-        results.append((prop, val))
+    rows = list(g.query(query))
 
-    if not results:
+    if not rows:
         raise HTTPException(status_code=404, detail="Pokémon non trouvé")
 
-    # passe les résultats au template HTML
+    pokemon = {
+        "name": pokemon_name_clean,
+        "img": str(rows[0].img),
+        "types": [],
+        "eggs": [],
+        "evo": None,
+        "stats": {
+            "pv": int(rows[0].pv) if rows[0].pv else 0,
+            "atk": int(rows[0].atk) if rows[0].atk else 0,
+            "defense": int(rows[0].defense) if rows[0].defense else 0,
+            "spatk": int(rows[0].spatk) if rows[0].spatk else 0,
+            "spdef": int(rows[0].spdef) if rows[0].spdef else 0,
+            "vit": int(rows[0].vit) if rows[0].vit else 0
+        }
+    }
+
+    for r in rows:
+        if r.type_img and str(r.type_img) not in pokemon["types"]:
+            pokemon["types"].append(str(r.type_img))
+        if r.egg and str(r.egg) not in pokemon["eggs"]:
+            pokemon["eggs"].append(str(r.egg))
+        if r.evo and str(r.evo) not in pokemon["evo"]:
+            pokemon["evo"] = str(r.evo)
+
     return templates.TemplateResponse("pokemon.html", {
         "request": request,
-        "pokemon_name": pokemon_name_clean,
-        "results": results
+        "pokemon": pokemon
     })

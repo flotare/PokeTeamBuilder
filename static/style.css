@@ -83,7 +83,23 @@ h1 {
     text-decoration: underline;
 }
 
+/* zone droite : sprite + types */
+.right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* colonne des types */
+.types {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+}
+
+/* images */
 .right img {
-    margin-left: 10px;
     border-radius: 6px;
+    margin-left: 0;
 }

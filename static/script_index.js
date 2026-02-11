@@ -23,28 +23,41 @@ async function setupSearch(inputId, resultId, endpoint) {
             div.className = "result";
 
             // Détermine le type pour construire l'URL
-            let path = "";
-            if (input.id === "search_pokemon") {
-                path = "pokemon";
-            } else if (input.id === "search_items") {
-                path = "objet";
-            }
+            let path = input.id === "search_pokemon" ? "pokemon" : "objet";
+
+            // HTML gauche (nom poké/objet + hyperlien)
+            let leftHTML = `<a class="left" href="/${path}/${encodeURIComponent(item.name)}">${item.name}</a>`;
+
+
+            // HTML droit (images)
 
             // Crée la partie droite avec le bon nombre d'images
-            let imagesHTML = `<img src="https://picsum.photos/80" width="40">`;
+            let imagesHTML = "";
+
             if (path === "pokemon") {
-                imagesHTML += `<img src="https://picsum.photos/81" width="40">`;
-                imagesHTML += `<img src="https://picsum.photos/82" width="40">`;
+
+                let typesHTML = "";
+
+                if (item.types && item.types.length > 0) {
+                    item.types.forEach(type => {
+                        typesHTML += `<img src="${type.type_img}" width="80">`;
+                    });
+                }
+
+                imagesHTML = `
+                    <img class="pokemon-img" src="${item.img}" width="80">
+                    <div class="types">
+                        ${typesHTML}
+                    </div>
+                `;
+
+            } else if (path === "objet") {
+                imagesHTML = `<img src="${item.img}" width="80">`;
             }
 
             div.innerHTML = `
-                <div class="left">
-                    
-                    <a class="left" href="/${path}/${encodeURIComponent(item.name)}">${item.name}</a>
-                </div>
-                <div class="right">
-                    ${imagesHTML}
-                </div>
+                <div class="left">${leftHTML}</div>
+                <div class="right">${imagesHTML}</div>
             `;
 
             resultsDiv.appendChild(div);

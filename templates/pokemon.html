@@ -1,28 +1,69 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>{{ pokemon_name }}</title>
-    <style>
-        body { font-family: Arial; padding: 20px; }
-        h1 { text-transform: capitalize; }
-        table { border-collapse: collapse; width: 100%; margin-top: 20px; }
-        th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
-    </style>
-</head>
-<body>
-    <h1>{{ pokemon_name }}</h1>
+<html lang="fr">
 
-    <table>
-        <tr>
-            <th>Propriété</th>
-            <th>Valeur</th>
-        </tr>
-        {% for prop, val in results %}
-        <tr>
-            <td>{{ prop }}</td>
-            <td>{{ val }}</td>
-        </tr>
+<head>
+    <meta charset="UTF-8">
+    <title>{{ pokemon.name }}</title>
+
+    <link rel="stylesheet" href="/static/pokemon.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>{{ pokemon.name }}</h1>
+
+    <div class="top">
+
+        <div class="left">
+
+            <img class="pokemon-img" src="{{ pokemon.img }}" alt="{{ pokemon.name }}">
+
+            <div class="types">
+                {% for t in pokemon.types %}
+                    <img src="{{ t }}" alt="type">
+                {% endfor %}
+            </div>
+
+        </div>
+
+        <div class="stats">
+
+            {% for stat, value in pokemon.stats.items() %}
+            <div class="stat">
+                <span class="label">{{ stat }} ({{ value }})</span>
+
+                <div class="stat-bar-container">
+                    <div class="stat-bar" data-stat="{{ value }}"></div>
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+
+    </div>
+
+    <div class="bottom">
+
+        <h3>Groupes d'oeufs</h3>
+        {% for egg in pokemon.eggs %}
+            <div>{{ egg }}</div>
         {% endfor %}
-    </table>
+
+        <h3>Évolution</h3>
+        {% if pokemon.evo %}
+            <div>{{ pokemon.evo }}</div>
+        {% else %}
+            <div>Aucune</div>
+        {% endif %}
+
+    </div>
+
+</div>
+
+<!-- JS placé en fin de body pour que le DOM soit chargé -->
+<script src="/static/script_pokemon.js"></script>
+
 </body>
 </html>
