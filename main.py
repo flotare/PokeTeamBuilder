@@ -269,7 +269,7 @@ def pokemon_page(request: Request, pokemon_name: str):
     WHERE {{
         ?p a :Pokemon ;
            :nom "{pokemon_name_clean}" ;
-           :descriptionEvolution ?desc
+           OPTIONAL {{ ?p :descriptionEvolution ?desc }}
            OPTIONAL {{ ?p :EvolvesTo ?evo . }}
            OPTIONAL {{ ?p :IsEvolutionOf ?preevo . }}
            
@@ -292,6 +292,7 @@ def pokemon_page(request: Request, pokemon_name: str):
         str(r.desc) for r in rows_evo if r.desc
     ]
 
+    print(pokemon["evo"])
 
     # --- 5. Capacités / Moves ---
     query_moves = f"""
@@ -342,7 +343,6 @@ def pokemon_page(request: Request, pokemon_name: str):
         'http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Capacite_statut'   : 'https://www.pokepedia.fr/images/8/8a/Miniature_Cat%C3%A9gorie_Statut_HOME.png'
     }
     
-    print(types)
     
     try:
         pokemon["moves"] = []

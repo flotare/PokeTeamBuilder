@@ -4,7 +4,8 @@
                     :WeakTo :fighting ;
                     :ImmuneTo :ghost ;
                     :WeakAgainst :rock, :steel ;
-                    :IneffectiveAgainst :ghost .
+                    :IneffectiveAgainst :ghost ;
+                    :url_img "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-viii/sword-shield/1.png"  .
 
 ### http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#fighting
 :fighting rdf:type owl:NamedIndividual ,
@@ -13,7 +14,8 @@
                     :ResistantTo :rock, :bug, :dark ;
                     :WeakAgainst :flying, :poison, :bug, :psychic, :fairy ;
                     :StrongAgainst :normal, :rock, :steel, :ice, :dark ;
-                    :IneffectiveAgainst :ghost .
+                    :IneffectiveAgainst :ghost ;
+                    :url_img "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-viii/sword-shield/2.png"  .
 
 ### http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#flying
 :flying rdf:type owl:NamedIndividual ,
@@ -22,7 +24,8 @@
                     :ResistantTo :fighting, :bug, :grass ;
                     :ImmuneTo :ground ;
                     :WeakAgainst :rock, :steel, :electric ;
-                    :StrongAgainst :fighting, :bug, :grass .
+                    :StrongAgainst :fighting, :bug, :grass ;
+                    :url_img "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-viii/sword-shield/3.png"  .
 
 ### http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#poison
 :poison rdf:type owl:NamedIndividual ,
@@ -31,7 +34,8 @@
                     :ResistantTo :fighting, :poison, :bug, :grass, :fairy ;
                     :WeakAgainst :poison, :ground, :rock, :ghost ;
                     :StrongAgainst :grass, :fairy ;
-                    :IneffectiveAgainst :steel .
+                    :IneffectiveAgainst :steel ;
+                    :url_img "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-viii/sword-shield/4.png"  .
 
 ### http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#ground
 :ground rdf:type owl:NamedIndividual ,
@@ -41,7 +45,8 @@
                     :ImmuneTo :electric ;
                     :WeakAgainst :bug, :grass ;
                     :StrongAgainst :poison, :rock, :steel, :fire, :electric ;
-                    :IneffectiveAgainst :flying .
+                    :IneffectiveAgainst :flying ;
+                    :url_img "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-viii/sword-shield/5.png"  .
 
 ### http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#rock
 :rock rdf:type owl:NamedIndividual ,
@@ -49,7 +54,8 @@
                     :WeakTo :fighting, :ground, :steel, :water, :grass ;
                     :ResistantTo :normal, :flying, :poison, :fire ;
                     :WeakAgainst :fighting, :ground, :steel ;
-                    :StrongAgainst :flying, :bug, :fire, :ice .
+                    :StrongAgainst :flying, :bug, :fire, :ice ;
+                    :url_img "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-viii/sword-shield/6.png"  .
 
 ### http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#bug
 :bug rdf:type owl:NamedIndividual ,
@@ -57,7 +63,8 @@
                     :WeakTo :flying, :rock, :fire ;
                     :ResistantTo :fighting, :ground, :grass ;
                     :WeakAgainst :fighting, :flying, :poison, :ghost, :steel, :fire, :fairy ;
-                    :StrongAgainst :grass, :psychic, :dark .
+                    :StrongAgainst :grass, :psychic, :dark ;
+                    :url_img "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-viii/sword-shield/7.png"  .
 
 ### http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#ghost
 :ghost rdf:type owl:NamedIndividual ,
@@ -67,7 +74,8 @@
                     :ImmuneTo :normal, :fighting ;
                     :WeakAgainst :dark ;
                     :StrongAgainst :ghost, :psychic ;
-                    :IneffectiveAgainst :normal .
+                    :IneffectiveAgainst :normal ;
+                    :url_img "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-viii/sword-shield/8.png"  .
 
 ### http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#steel
 :steel rdf:type owl:NamedIndividual ,
@@ -76,7 +84,8 @@
                     :ResistantTo :normal, :flying, :rock, :bug, :steel, :grass, :psychic, :ice, :dragon, :fairy ;
                     :ImmuneTo :poison ;
                     :WeakAgainst :steel, :fire, :water, :electric ;
-                    :StrongAgainst :rock, :ice, :fairy .
+                    :StrongAgainst :rock, :ice, :fairy ;
+                    :url_img "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-viii/sword-shield/9.png"  .
 
 ### http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#fire
 :fire rdf:type owl:NamedIndividual ,
@@ -84,7 +93,8 @@
                     :WeakTo :ground, :rock, :water ;
                     :ResistantTo :bug, :steel, :fire, :grass, :ice, :fairy ;
                     :WeakAgainst :rock, :fire, :water, :dragon ;
-                    :StrongAgainst :bug, :steel, :grass, :ice .
+                    :StrongAgainst :bug, :steel, :grass, :ice ;
+                    :url_img "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-viii/sword-shield/10.png"  .
 
 ### http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#water
 :water rdf:type owl:NamedIndividual ,
@@ -92,7 +102,8 @@
                     :WeakTo :grass, :electric ;
                     :ResistantTo :steel, :fire, :water, :ice ;
                     :WeakAgainst :water, :grass, :dragon ;
-                    :StrongAgainst :ground, :rock, :fire .
+                    :StrongAgainst :ground, :rock, :fire ;
+                    :url_img "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-viii/sword-shield/11.png"  .
 
 ### http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#grass
 :grass rdf:type owl:NamedIndividual ,
@@ -100,7 +111,8 @@
                     :WeakTo :flying, :poison, :bug, :fire, :ice ;
                     :ResistantTo :ground, :water, :grass, :electric ;
                     :WeakAgainst :flying, :poison, :bug, :steel, :fire, :grass, :dragon ;
-                    :StrongAgainst :ground, :rock, :water .
+                    :StrongAgainst :ground, :rock, :water ;
+                    :url_img "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-viii/sword-shield/12.png"  .
 
 ### http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#electric
 :electric rdf:type owl:NamedIndividual ,
@@ -109,7 +121,8 @@
                     :ResistantTo :flying, :steel, :electric ;
                     :WeakAgainst :grass, :electric, :dragon ;
                     :StrongAgainst :flying, :water ;
-                    :IneffectiveAgainst :ground .
+                    :IneffectiveAgainst :ground ;
+                    :url_img "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-viii/sword-shield/13.png"  .
 
 ### http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#psychic
 :psychic rdf:type owl:NamedIndividual ,
@@ -118,7 +131,8 @@
                     :ResistantTo :fighting, :psychic ;
                     :WeakAgainst :steel, :psychic ;
                     :StrongAgainst :fighting, :poison ;
-                    :IneffectiveAgainst :dark .
+                    :IneffectiveAgainst :dark ;
+                    :url_img "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-viii/sword-shield/14.png"  .
 
 ### http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#ice
 :ice rdf:type owl:NamedIndividual ,
@@ -126,7 +140,8 @@
                     :WeakTo :fighting, :rock, :steel, :fire ;
                     :ResistantTo :ice ;
                     :WeakAgainst :steel, :fire, :water, :ice ;
-                    :StrongAgainst :flying, :ground, :grass, :dragon .
+                    :StrongAgainst :flying, :ground, :grass, :dragon ;
+                    :url_img "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-viii/sword-shield/15.png"  .
 
 ### http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#dragon
 :dragon rdf:type owl:NamedIndividual ,
@@ -135,7 +150,8 @@
                     :ResistantTo :fire, :water, :grass, :electric ;
                     :WeakAgainst :steel ;
                     :StrongAgainst :dragon ;
-                    :IneffectiveAgainst :fairy .
+                    :IneffectiveAgainst :fairy ;
+                    :url_img "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-viii/sword-shield/16.png"  .
 
 ### http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#dark
 :dark rdf:type owl:NamedIndividual ,
@@ -144,7 +160,8 @@
                     :ResistantTo :ghost, :dark ;
                     :ImmuneTo :psychic ;
                     :WeakAgainst :fighting, :dark, :fairy ;
-                    :StrongAgainst :ghost, :psychic .
+                    :StrongAgainst :ghost, :psychic ;
+                    :url_img "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-viii/sword-shield/17.png"  .
 
 ### http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#fairy
 :fairy rdf:type owl:NamedIndividual ,
@@ -153,17 +170,21 @@
                     :ResistantTo :fighting, :bug, :dark ;
                     :ImmuneTo :dragon ;
                     :WeakAgainst :poison, :steel, :fire ;
-                    :StrongAgainst :fighting, :dragon, :dark .
+                    :StrongAgainst :fighting, :dragon, :dark ;
+                    :url_img "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-viii/sword-shield/18.png"  .
 
 ### http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#stellar
 :stellar rdf:type owl:NamedIndividual ,
-                             :Type_pokemon .
+                             :Type_pokemon ;
+                    :url_img "https://www.cabinet-merlin.fr/wp-content/uploads/2016/04/dummy-post-square-1.jpg"  .
 
 ### http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#unknown
 :unknown rdf:type owl:NamedIndividual ,
-                             :Type_pokemon .
+                             :Type_pokemon ;
+                    :url_img "https://www.cabinet-merlin.fr/wp-content/uploads/2016/04/dummy-post-square-1.jpg"  .
 
 ### http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon#shadow
 :shadow rdf:type owl:NamedIndividual ,
-                             :Type_pokemon .
+                             :Type_pokemon ;
+                    :url_img "https://www.cabinet-merlin.fr/wp-content/uploads/2016/04/dummy-post-square-1.jpg"  .
 
