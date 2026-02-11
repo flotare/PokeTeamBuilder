@@ -410,6 +410,7 @@ def pokemon_page(request: Request, pokemon_name: str):
         'http://www.semanticweb.org/arthu/ontologies/2026/0/OntoPokemon/Capacite_statut'   : 'https://www.pokepedia.fr/images/8/8a/Miniature_Cat%C3%A9gorie_Statut_HOME.png'
     }
     
+
     
     pokemon["moves"] = []
     for r in rows_moves_2:

@@ -81,7 +81,7 @@
                 <h4>Méthode(s) d'évolutions</h4>
                 {% if pokemon.evodesc %}
                 {% for desc in pokemon.evodesc %}
-                    <div>{{ desc }}</div>
+                    <div>{{ desc | safe }}</div>
                 {% endfor %}
                 {% else %}
                     <div>Non renseignée(s)</div>
