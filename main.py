@@ -194,10 +194,56 @@ def pokemon_page(request: Request, pokemon_name: str):
             pokemon["types"].append(str(r.type_img))
         if r.egg and str(r.egg) not in pokemon["eggs"]:
             pokemon["eggs"].append(str(r.egg))
-        if r.evo and str(r.evo) not in pokemon["evo"]:
+        print(r.evo)
+        if r.evo and pokemon["evo"] is not None and str(r.evo) not in pokemon["evo"]:
             pokemon["evo"] = str(r.evo)
 
     return templates.TemplateResponse("pokemon.html", {
         "request": request,
         "pokemon": pokemon
     })
+
+
+@app.get("/objet/{item_name}", response_class=HTMLResponse)
+def item_page(request: Request, item_name: str):
+
+    item_name_clean = item_name.strip()
+    prefix = f"PREFIX : <{str(ONTO)}>"
+
+    query = f"""
+    {prefix}
+    PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+    SELECT ?item ?nom ?img ?effect ?type
+    WHERE {{
+        ?item :nom "{item_name_clean}" ;
+              :url_img ?img ;
+              :effect_name ?effect ;
+              rdf:type ?type .
+
+        FILTER(?type != owl:NamedIndividual)
+    }}
+    LIMIT 1
+    """
+
+    rows = list(g.query(query))
+
+    if not rows:
+        raise HTTPException(status_code=404, detail="Objet non trouvé")
+
+    row = rows[0]
+
+    item_data = {
+        "name": str(row.nom),
+        "img": str(row.img),
+        "effect": str(row.effect),
+        "type": str(row.type).split("#")[-1]
+    }
+
+    return templates.TemplateResponse(
+        "item.html",
+        {
+            "request": request,
+            "item": item_data
+        }
+    )

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Pokédex{% endblock %}</title>
+
+    <link rel="stylesheet" href="/static/header.css">
+    {% block css %}{% endblock %}
+</head>
+
+<body>
+
+{% include "header.html" %}
+
+<div class="page">
+    {% block content %}{% endblock %}
+</div>
+
+</body>
+</html>

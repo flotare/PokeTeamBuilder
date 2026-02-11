@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>PoC Ontologie</title>
-    <link rel="stylesheet" href="/static/style.css">
-    <script defer src="/static/script_index.js"></script>
-</head>
-<body>
+{% extends "base.html" %}
+
+{% block css %}
+<link rel="stylesheet" href="/static/style.css">
+<script defer src="/static/script_index.js"></script>
+{% endblock %}
+
+{% block content %}
 
 <h1>Pokédex Ontologique</h1>
 
@@ -27,5 +27,4 @@
 
 </div>
 
-</body>
-</html>
+{% endblock %}

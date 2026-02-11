@@ -1,14 +1,13 @@
-<!DOCTYPE html>
-<html lang="fr">
+{% extends "base.html" %}
 
-<head>
-    <meta charset="UTF-8">
-    <title>{{ pokemon.name }}</title>
+{% block title %}{{ pokemon.name }}{% endblock %}
 
-    <link rel="stylesheet" href="/static/pokemon.css">
-</head>
+{% block css %}
+<link rel="stylesheet" href="/static/pokemon.css">
+<script src="/static/script_pokemon.js"></script>
+{% endblock %}
 
-<body>
+{% block content %}
 
 <div class="container">
 
@@ -65,5 +64,4 @@
 <!-- JS placé en fin de body pour que le DOM soit chargé -->
 <script src="/static/script_pokemon.js"></script>
 
-</body>
-</html>
+{% endblock %}
